@@ -1,0 +1,707 @@
+brand,model,year,mileage,transmission,location,fuel_type,price
+Suzuki,Baleno 1.5 Hatchback,2023,12510,Automatic,DKI Jakarta,Bensin,217000000
+Honda,"Brio 1.2 Satya E Hatchback - CVT, ISTIMEWA, SIAP PAKAI, LOW KM, CIAMIK POL, PAJAK PANJANG",2019,27525,Automatic,Jawa Timur,Bensin,150000000
+Wuling,Binguo EV 333 Long Range AC/DC Hatchback - 0.0 333 Long Range AC DC,2024,17515,Automatic,Jawa Timur,Elektrik,180000000
+Mitsubishi,Destinator 1.5 Ultimate Premium (Quartz White Pearl) SUV,2025,7505,Automatic,Jawa Timur,Bensin,460000000
+Chevrolet,TRAX 1.4 LT SUV,2016,30027,Automatic,Jawa Timur,Bensin,118000000
+Mitsubishi,Xpander Cross 1.5 Premium (White colour) MPV,2024,15012,Automatic,Jawa Timur,Bensin,285000000
+Toyota,Avanza 1.5 G MPV,2024,42540,Automatic,DKI Jakarta,Bensin,212000000
+Honda,HR-V 1.5 E Special Edition SUV,2021,27525,Automatic,DKI Jakarta,Bensin,234000000
+Suzuki,Ertiga 1.5 Hybrid GX MPV,2023,27525,Automatic,Jawa Timur,Hybrid,225000000
+Nissan,Livina 1.5 X-Gear MPV,2016,20017,Automatic,Jawa Timur,Bensin,137000000
+Suzuki,Baleno 1.5 Hatchback - Promo DP Ringan atau Angsuran Ringan,2023,30027,Automatic,Jawa Barat,Bensin,214000000
+Hyundai,"IONIQ Signature Coupe - 0.0 4, ,",2021,25022,Automatic,DKI Jakarta,Elektrik,225000000
+Nissan,Livina 1.5 VE MPV,2021,47545,Automatic,DKI Jakarta,Bensin,180000000
+Daihatsu,"Terios 1.5 R Custom SUV - AT, ISTIMEWA, SIAP PAKAI, LOW KM, CIAMIK POL, PAJAK PANJANG",2017,40037,Automatic,Jawa Timur,Bensin,160000000
+Honda,Mobilio 1.5 S MPV,2022,20017,Manual,DKI Jakarta,Bensin,154000000
+Honda,Civic 1.5 ES Sedan,2019,35032,Automatic,DKI Jakarta,Bensin,289000000
+Toyota,Yaris 1.5 TRD Sportivo 3 AB Hatchback,2021,17515,Automatic,DKI Jakarta,Bensin,211000000
+Hyundai,Creta 1.5 Trend SUV,2022,37535,Automatic,Banten,Bensin,215000000
+Hyundai,Creta 1.5 Trend SUV - LOW KM,2022,20017,Automatic,Jawa Barat,Bensin,212000000
+Hyundai,Stargazer 1.5 Prime MPV,2023,12510,Automatic,Jawa Barat,Bensin,215000000
+Nissan,March 1.2 Hatchback,2017,50047,Automatic,DKI Jakarta,Bensin,107000000
+Honda,Brio 1.2 Satya E Hatchback,2022,47545,Automatic,Jawa Barat,Bensin,152000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2020,32530,Automatic,DKI Jakarta,Bensin,212000000
+Toyota,Raize 1.0 GR Sport TSS (1 Tone) SUV,2022,20017,Automatic,Banten,Bensin,212000000
+Honda,CR-V 1.5 Turbo Prestige SUV,2023,30027,Automatic,DKI Jakarta,Bensin,448000000
+Honda,HR-V 1.5 Special Edition SUV,2023,10007,Automatic,DKI Jakarta,Bensin,325000000
+Toyota,Sienta 1.5 V MPV,2021,20017,Automatic,Jawa Barat,Bensin,195000000
+Mitsubishi,XFORCE 1.5 Ultimate SUV,2023,22520,Automatic,Jawa Barat,Bensin,290000000
+Hyundai,Creta 1.5 Style SUV,2023,20017,Automatic,Jawa Barat,Bensin,238000000
+Toyota,Voxy 2.0 MPV,2022,35032,Automatic,Jawa Barat,Bensin,370000000
+Mitsubishi,Xpander Cross 1.5 Premium MPV,2023,35032,Automatic,Jawa Barat,Bensin,267000000
+Honda,BR-V 1.5 E Prestige SUV,2016,50047,Automatic,DKI Jakarta,Bensin,160000000
+Toyota,Yaris 1.5 TRD Sportivo Heykers Hatchback,2017,42540,Automatic,Jawa Barat,Bensin,165000000
+Honda,Brio 1.2 Satya E Hatchback,2025,2500,Automatic,Jawa Barat,Bensin,185000000
+Suzuki,S-Presso 1.0 Hatchback,2022,25022,Automatic,Jawa Barat,Bensin,128000000
+Toyota,Agya 1.2 TRD Hatchback,2019,32530,Automatic,Jawa Barat,Bensin,123000000
+Honda,Brio 1.2 Satya E Hatchback,2024,15012,Automatic,DKI Jakarta,Bensin,170000000
+Honda,Brio 1.2 Satya E Hatchback,2023,7505,Automatic,DKI Jakarta,Bensin,163000000
+Daihatsu,Rocky 1.2 M SUV - Hitam Bergaransi Promo DP minim,2021,17515,Automatic,Jawa Barat,Bensin,165000000
+Toyota,Rush 1.5 GR Sport SUV,2023,17515,Automatic,DKI Jakarta,Bensin,248000000
+Daihatsu,Rocky 1.0 R TC ASA SUV - Kuning Bergaransi Promo DP minim,2021,20017,Automatic,DKI Jakarta,Bensin,188000000
+Honda,HR-V 1.5 Special Edition SUV,2025,10007,Automatic,DKI Jakarta,Bensin,350000000
+Toyota,Sienta 1.5 V MPV - Abu-Abu Bergaransi Promo DP minim,2021,20017,Automatic,Jawa Barat,Bensin,195000000
+Mitsubishi,XFORCE 1.5 Ultimate SUV,2023,22520,Automatic,DKI Jakarta,Bensin,292000000
+Honda,HR-V 1.5 S SUV - Pajak 2027 Garansi 1 Tahun,2018,45042,Automatic,Banten,Bensin,170000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2022,25022,Automatic,DKI Jakarta,Bensin,243000000
+Honda,City 1.5 RS Hatchback,2021,42540,Automatic,Banten,Bensin,214000000
+Ford,Ranger 2.0 Raptor Pickup,2025,2500,Automatic,DKI Jakarta,Bensin,1319000000
+Honda,BR-V 1.5 E Prestige SUV,2017,40037,Automatic,DKI Jakarta,Bensin,170000000
+Toyota,Raize 1.2 G (1 Tone) SUV,2024,15012,Automatic,DKI Jakarta,Bensin,199000000
+Honda,WR-V 1.5 RS SUV,2023,30027,Automatic,DKI Jakarta,Bensin,229000000
+Toyota,Calya 1.2 G MPV,2018,55052,Automatic,Jawa Barat,Bensin,114000000
+Hyundai,Stargazer X 1.5 Prime MPV - JOSSS,2024,10007,Automatic,Jawa Tengah,Bensin,250000000
+Honda,BR-V 1.5 Prestige SUV,2022,22520,Automatic,DKI Jakarta,Bensin,221000000
+Honda,BR-V 1.5 E Prestige SUV,2016,47545,Automatic,Jawa Barat,Bensin,162000000
+Mazda,3 1.6 Sedan,2007,62560,Manual,Banten,Bensin,70000000
+Honda,Mobilio 1.5 S MPV,2018,35032,Manual,Banten,Bensin,134000000
+Mitsubishi,Xpander Cross 1.5 Premium MPV,2023,35032,Automatic,DKI Jakarta,Bensin,268000000
+Suzuki,Ertiga 1.5 Hybrid SS MPV,2022,25022,Automatic,DKI Jakarta,Hybrid,209000000
+Nissan,Livina 1.5 VL MPV,2019,37535,Automatic,DKI Jakarta,Bensin,180000000
+Honda,Brio 1.2 Satya E Hatchback,2023,10007,Automatic,DKI Jakarta,Bensin,163000000
+BMW,Z4 3.0 M40i Convertible,2024,2500,Automatic,DKI Jakarta,Bensin,1595000000
+Toyota,Land Cruiser 4.5 200 Full spec SUV,2012,40037,Automatic,DKI Jakarta,Bensin,995000000
+Toyota,Calya 1.2 G MPV,2018,40037,Automatic,DKI Jakarta,Bensin,119000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2024,27525,Automatic,DKI Jakarta,Bensin,258000000
+Hyundai,Stargazer 1.5 Active MPV,2022,10007,Automatic,DKI Jakarta,Bensin,170000000
+Toyota,Alphard 2.5 HEV (Premium Color) MPV,2025,2500,Automatic,DKI Jakarta,Elektrik,1545000000
+Mercedes-Benz,E300 2.0 AMG Line Sedan,2024,2500,Automatic,DKI Jakarta,Bensin,1395000000
+Nissan,March 1.2 Hatchback - UNIK,2017,50047,Automatic,DKI Jakarta,Bensin,105000000
+Hyundai,IONIQ 5 Signature Long Range SUV - 0.0,2023,10007,Automatic,DKI Jakarta,Elektrik,465000000
+BMW,320i 2.0 Luxury Sedan,2018,15012,Automatic,DKI Jakarta,Bensin,325000000
+Honda,BR-V 1.5 Prestige SUV,2022,32530,Automatic,Banten,Bensin,205000000
+Hyundai,"Stargazer 1.5 Prime MPV - AT, ISTIMEWA, SIAP PAKAI, LOW KM, CIAMIK POL, PAJAK PANJANG",2022,15012,Automatic,Jawa Timur,Bensin,215000000
+Toyota,Kijang Innova 2.4 Venturer MPV,2022,32530,Automatic,Banten,Bensin,449000000
+Suzuki,Ertiga 1.5 Hybrid SS MPV - CASH CREDIT - LOW KM - BERGARANSI - BEBAS LAKA BANJIR,2022,25022,Automatic,Banten,Hybrid,209000000
+Mercedes-Benz,C300 2.0 AMG Line Sedan,2025,2500,Automatic,DKI Jakarta,Bensin,1280000000
+Mercedes-Benz,C300 2.0 AMG Line Sedan,2023,5002,Automatic,DKI Jakarta,Bensin,875000000
+Suzuki,Baleno 1.4 Hatchback - AT SILVER,2021,37535,Automatic,DKI Jakarta,Bensin,189000000
+Suzuki,Jimny 1.5 5 Door (1 Tone) SUV,2025,2500,Manual,Banten,Bensin,428800000
+Honda,CR-V 1.5 Turbo Prestige SUV,2021,42540,Automatic,Banten,Bensin,394000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2024,20017,Automatic,DKI Jakarta,Bensin,443000000
+Honda,HR-V 1.8 Prestige SUV,2015,35032,Automatic,DKI Jakarta,Bensin,197000000
+Toyota,Yaris Cross 1.5 S HV with GR Parts Aero Pkg SUV,2023,25022,Automatic,Jawa Barat,Hybrid,341000000
+Suzuki,Ertiga 1.5 Hybrid GX MPV,2023,42540,Automatic,DKI Jakarta,Hybrid,210000000
+BMW,M4 3.0 Coupe - F82 Austin Yellow on Black Merino Leather,2014,2500,Automatic,Banten,Bensin,1385000000
+KIA,Sonet 1.5 Premiere SUV,2023,10007,Automatic,DKI Jakarta,Bensin,234000000
+Suzuki,Baleno 1.5 Hatchback,2023,30027,Automatic,Banten,Bensin,214000000
+Honda,Jazz 1.5 RS Hatchback,2019,32530,Automatic,DKI Jakarta,Bensin,218000000
+KIA,Sonet 1.5 Premiere SUV - KM LOW - LIKE NEW - BERGARANSI,2023,10007,Automatic,Jawa Barat,Bensin,234000000
+Toyota,Alphard 2.4 SC MPV,2015,27525,Automatic,DKI Jakarta,Bensin,459000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4x2 SUV,2023,17515,Automatic,DKI Jakarta,Diesel,479000000
+Toyota,Rush 1.5 GR Sport SUV,2023,25022,Automatic,Banten,Bensin,215000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2018,42540,Automatic,DKI Jakarta,Bensin,193000000
+Honda,BR-V 1.5 Prestige Honda Sensing SUV - Prestige Sensing,2023,32530,Automatic,DKI Jakarta,Bensin,448000000
+Toyota,Voxy 2.0 MPV,2018,27525,Automatic,DKI Jakarta,Bensin,240000000
+KIA,Seltos 1.4 EX+ SUV - EX,2021,30027,Automatic,DKI Jakarta,Bensin,258000000
+Honda,Brio 1.2 Satya E Hatchback,2019,27525,Automatic,Jawa Barat,Bensin,146000000
+Suzuki,Baleno 1.5 Hatchback,2023,27525,Automatic,DKI Jakarta,Bensin,214000000
+Mazda,8 2.3 MPV,2012,25022,Automatic,Jawa Tengah,Bensin,150000000
+Suzuki,XL7 1.5 Zeta SUV - MANUAL HITAM KM SEPERTI BARU,2024,7505,Manual,Jawa Barat,Bensin,207000000
+Honda,WR-V 1.5 RS SUV - WRV TWO TONE AT,2023,27525,Automatic,DKI Jakarta,Bensin,205000000
+Hyundai,Creta 1.5 Trend SUV - LOW KM,2022,20017,Automatic,Jawa Barat,Bensin,222000000
+Toyota,Avanza 1.3 G MPV,2018,72570,Manual,DKI Jakarta,Bensin,140000000
+Mercedes-Benz,GLC300 2.0 AMG Line 4MATIC Coupe - Polar White on Black Artico Leather Seat,2024,7505,Automatic,Banten,Bensin,1438000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2022,35032,Automatic,Banten,Bensin,243000000
+Daihatsu,Rocky 1.2 X SUV,2022,40037,Automatic,DKI Jakarta,Bensin,180000000
+Suzuki,Jimny 1.5 5 Door (1 Tone) SUV,2025,2500,Automatic,Jawa Barat,Bensin,443500000
+Suzuki,Ertiga 1.5 GL MPV,2026,2500,Automatic,Jawa Barat,Bensin,222200000
+Honda,Brio 1.2 Satya E Hatchback,2024,17515,Automatic,DKI Jakarta,Bensin,170000000
+Suzuki,Fronx 1.5 GX Hybrid SUV,2025,2500,Automatic,Jawa Barat,Hybrid,265200000
+Honda,BR-V 1.5 Prestige Honda Sensing SUV - Prestige Sensing,2022,25022,Automatic,DKI Jakarta,Bensin,235000000
+Honda,Brio 1.2 RS Hatchback,2017,20017,Automatic,DKI Jakarta,Bensin,141000000
+Toyota,Agya 1.2 G Hatchback,2023,22520,Automatic,Banten,Bensin,155000000
+Mercedes-Benz,GLC200 2.0 AMG SUV,2017,17515,Automatic,Jawa Barat,Bensin,388000000
+Mitsubishi,Xpander 1.5 Ultimate MPV - AT PUTIH km ISTIMEWA,2022,15012,Automatic,DKI Jakarta,Bensin,250000000
+Honda,HR-V 1.5 Special Edition SUV,2025,7505,Automatic,DKI Jakarta,Bensin,350000000
+Toyota,Kijang Innova 2.4 V MPV - DIESEL,2019,35032,Automatic,DKI Jakarta,Bensin,370000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2022,35032,Automatic,DKI Jakarta,Bensin,370000000
+Toyota,Fortuner 2.4 VRZ TRD 4X2 SUV,2021,30027,Automatic,DKI Jakarta,Diesel,460000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV,2021,32530,Automatic,DKI Jakarta,Bensin,450000000
+Hyundai,Creta 1.5 Prime SUV,2023,37535,Automatic,DKI Jakarta,Bensin,266000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV - Promo DP Ringan atau Angsuran Ringan,2021,27525,Automatic,DKI Jakarta,Bensin,195000000
+Nissan,Livina 1.5 VL MPV - MURAH,2019,50047,Automatic,Jawa Barat,Bensin,175000000
+Honda,HR-V 1.5 E Special Edition SUV,2021,50047,Automatic,DKI Jakarta,Bensin,238000000
+Honda,HR-V 1.5 Special Edition SUV,2025,7505,Automatic,DKI Jakarta,Bensin,351000000
+Mercedes-Benz,AMG C43 3.0 Coupe - Hyacinth Red on Alacantara Black Leather,2017,7505,Automatic,DKI Jakarta,Bensin,899000000
+Suzuki,XL7 1.5 Zeta SUV,2024,7505,Manual,Banten,Bensin,209000000
+Daihatsu,Rocky 1.2 M SUV,2021,20017,Automatic,DKI Jakarta,Bensin,165000000
+Hyundai,Tucson 2.0 XG SUV,2018,80077,Automatic,Jawa Barat,Bensin,182000000
+Toyota,Raize 1.2 G (1 Tone) SUV,2023,30027,Automatic,Jawa Barat,Bensin,191000000
+Wuling,Air EV Long Range Hatchback - 0.0,2022,17515,Automatic,DKI Jakarta,Elektrik,119000000
+Nissan,Livina 1.5 VL MPV - AT PUTIH KM ISTIMEWA,2022,15012,Automatic,DKI Jakarta,Bensin,204000000
+Toyota,Raize 1.0 GR Sport TSS (1 Tone) SUV - Promo DP Ringan atau Angsuran Ringan,2022,20017,Automatic,DKI Jakarta,Bensin,212000000
+Mazda,CX-30 2.0 GT SUV,2023,15012,Automatic,DKI Jakarta,Bensin,380000000
+Hyundai,Creta 1.5 Prime SUV - Promo DP Ringan atau Angsuran Ringan,2023,25022,Automatic,DKI Jakarta,Bensin,274000000
+Nissan,March 1.2 Hatchback - AT HITAM,2017,50047,Automatic,Jawa Barat,Bensin,106000000
+Honda,Mobilio 1.5 E MPV - CVT (GANJIL),2015,117615,Automatic,DKI Jakarta,Bensin,125000000
+Toyota,Calya 1.2 G MPV,2024,12510,Automatic,Jawa Barat,Bensin,154000000
+Suzuki,Ertiga 1.5 GX MPV,2018,27525,Automatic,Jawa Barat,Bensin,168000000
+Suzuki,XL7 1.5 Zeta SUV,2024,7505,Manual,DKI Jakarta,Bensin,206000000
+Honda,City 1.5 RS Honda Sensing Hatchback - RS Sensing,2022,42540,Automatic,Banten,Bensin,232000000
+Daihatsu,Sigra 1.2 R Deluxe MPV,2018,25022,Automatic,Jawa Barat,Bensin,118000000
+KIA,Seltos 1.4 EX+ SUV - EX,2021,30027,Automatic,DKI Jakarta,Bensin,255000000
+Honda,Mobilio 1.5 E MPV - CVT (GENAP),2015,95092,Automatic,DKI Jakarta,Bensin,125000000
+Toyota,Veloz 1.5 Q (Non Premium Color) MPV,2023,22520,Automatic,Banten,Bensin,236000000
+Mercedes-Benz,GL400 3.0 4MATIC SUV,2015,12510,Automatic,Banten,Bensin,480000000
+BMW,M4 3.0 Competition Coupe,2023,10007,Automatic,DKI Jakarta,Bensin,2000000000
+Toyota,Yaris 1.5 GR Sport 3 AB Hatchback,2021,30027,Automatic,Banten,Bensin,219000000
+Hyundai,Creta 1.5 Prime SUV,2023,25022,Automatic,DKI Jakarta,Bensin,274000000
+Honda,Mobilio 1.5 RS MPV - Cash 133 JT NEGO,2015,57555,Automatic,DKI Jakarta,Bensin,128000000
+Mazda,2 1.5 R Hatchback - Cash 110 JT NEGO,2013,72570,Automatic,DKI Jakarta,Bensin,100000000
+Datsun,GO+ 1.2 T-Style MPV - GO - Cash 73 JT NEGO,2016,50047,Manual,DKI Jakarta,Bensin,68000000
+Nissan,Grand Livina 1.5 XV MPV - Cash 122 JT NEGO,2017,47545,Automatic,DKI Jakarta,Bensin,117000000
+Nissan,Serena 2.0 Highway Star MPV - Cash 137 JT NEGO,2014,62560,Automatic,DKI Jakarta,Bensin,130000000
+Nissan,Grand Livina 1.5 SV MPV - Cash 105 JT NEGO,2015,77575,Automatic,DKI Jakarta,Bensin,100000000
+Toyota,Calya 1.2 G MPV - Cash 110 JT NEGO,2019,35032,Automatic,DKI Jakarta,Bensin,106000000
+Honda,Freed 1.5 S MPV - Cash 118 JT NEGO,2012,72570,Automatic,DKI Jakarta,Bensin,110000000
+Honda,City 1.5 E Sedan - Cash 152 JT NEGO,2016,72570,Automatic,DKI Jakarta,Bensin,142000000
+Wuling,Confero 1.5 S L ACT Lux+ MPV - S L ACT Lux - Cash 110 JT NEGO - DP 3 JT,2020,60057,Automatic,DKI Jakarta,Bensin,100000000
+Honda,Mobilio 1.5 E MPV - Cash 145 JT NEGO,2018,32530,Automatic,DKI Jakarta,Bensin,135000000
+Daihatsu,Xenia 1.3 R Standard MPV - Cash 107 JT NEGO,2014,65062,Manual,DKI Jakarta,Bensin,100000000
+Nissan,Livina 1.5 VL MPV - Cash 179 JT NEGO,2019,45042,Automatic,DKI Jakarta,Bensin,170000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV - Cash 210 JT NEGO,2021,22520,Automatic,DKI Jakarta,Bensin,190000000
+Toyota,Kijang Innova 2.0 G MPV - Cash 268 JT NEGO,2021,35032,Automatic,DKI Jakarta,Bensin,263000000
+Mazda,2 1.5 RZ Hatchback - Cash 110 JT NEGO,2012,60057,Automatic,DKI Jakarta,Bensin,100000000
+Toyota,Avanza 1.3 G MPV - Cash 122 JT NEGO,2014,52550,Automatic,DKI Jakarta,Bensin,115000000
+Daihatsu,Xenia 1.3 X MPV - Cash 122 JT NEGO - DP 5 JT AJAA,2016,57555,Automatic,DKI Jakarta,Bensin,115000000
+Wuling,Cortez 1.8 L Lux+ MPV - L Lux - Cash 125 JT NEGO,2018,40037,Automatic,DKI Jakarta,Bensin,115000000
+Mitsubishi,Xpander 1.5 Ultimate MPV - AT HITAM ISTIMEWA,2022,25022,Automatic,Jawa Barat,Bensin,240000000
+KIA,"Seltos 1.4 EX+ SUV - EX CASH CREDIT - BEBAS LAKA BANJIR - GARANSI MESIN,AC TRANSMISI",2021,30027,Automatic,Banten,Bensin,258000000
+Toyota,Calya 1.2 G MPV,2023,5002,Automatic,DKI Jakarta,Bensin,148000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2023,15012,Automatic,Banten,Bensin,245000000
+Honda,HR-V 1.5 Special Edition SUV,2022,30027,Automatic,DKI Jakarta,Bensin,305000000
+Toyota,Agya 1.2 G Hatchback - JMINAN MUTU,2023,20017,Automatic,Jawa Barat,Bensin,155000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV - Biru metalik Bergaransi Promo DP minim,2021,25022,Automatic,DKI Jakarta,Bensin,195000000
+Hyundai,Stargazer 1.5 Prime MPV,2022,27525,Automatic,DKI Jakarta,Bensin,201000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2023,42540,Automatic,DKI Jakarta,Bensin,253000000
+Hyundai,Stargazer X 1.5 Prime MPV,2024,30027,Automatic,DKI Jakarta,Bensin,245000000
+Honda,Mobilio 1.5 E MPV - JAMINAN MUTU,2016,37535,Manual,Jawa Barat,Bensin,133000000
+Honda,Brio 1.2 Satya E Hatchback - Putih Bergaransi Promo DP Minim,2019,27525,Automatic,Jawa Barat,Bensin,146000000
+Toyota,Avanza 1.5 G MPV,2022,40037,Automatic,DKI Jakarta,Bensin,204000000
+Toyota,Yaris Cross 1.5 S HV (Premium colour) SUV,2023,22520,Automatic,Jawa Barat,Hybrid,341000000
+Nissan,Livina 1.5 VL MPV - bergaransi,2019,47545,Automatic,Banten,Bensin,175000000
+Daihatsu,Ayla 1.0 X Hatchback - BERGARANSI,2021,10007,Manual,DKI Jakarta,Bensin,107000000
+Nissan,March 1.2 Hatchback - hitam Promo DP minim,2017,50047,Automatic,Jawa Barat,Bensin,107000000
+Daihatsu,Rocky 1.2 X SUV - BERGARANSI,2022,40037,Automatic,DKI Jakarta,Bensin,180000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2022,15012,Automatic,Banten,Bensin,251000000
+Suzuki,Ertiga 1.5 Hybrid GX MPV - BERGARANSI,2023,42540,Automatic,Jawa Barat,Hybrid,210000000
+Toyota,Fortuner 2.4 VRZ TRD 4X2 SUV,2021,30027,Automatic,DKI Jakarta,Diesel,463000000
+Daihatsu,Rocky 1.0 R TC ADS SUV,2021,20017,Automatic,Jawa Barat,Bensin,185000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2020,30027,Automatic,Jawa Barat,Bensin,206000000
+Daihatsu,Xenia 1.3 X MPV,2022,45042,Automatic,Jawa Barat,Bensin,192000000
+Honda,BR-V 1.5 E Prestige SUV - JAMINAN MUTU,2016,47545,Automatic,Jawa Barat,Bensin,160000000
+Suzuki,S-Presso 1.0 Hatchback - abu abu Bergaransi Promo DP minim,2022,25022,Automatic,Jawa Barat,Bensin,128000000
+Mitsubishi,Xpander 1.5 Ultimate MPV - Hitam Promo DP Minim,2020,32530,Automatic,Jawa Barat,Bensin,212000000
+Daihatsu,Sigra 1.2 R Deluxe MPV,2023,12510,Automatic,DKI Jakarta,Bensin,145000000
+Mitsubishi,Xpander 1.5 GLS MPV - Dp 17 Juta,2021,45042,Automatic,DKI Jakarta,Bensin,177500000
+Toyota,Avanza 1.3 E MPV - Dp 8 Juta,2018,42540,Automatic,DKI Jakarta,Bensin,130000000
+Hyundai,Creta 1.5 Prime SUV - Dp 15 Juta,2023,30027,Automatic,DKI Jakarta,Bensin,270000000
+Toyota,Kijang Innova 2.0 G MPV - Dp 7 Juta,2021,47545,Automatic,DKI Jakarta,Bensin,255000000
+Honda,Mobilio 1.5 E MPV - Dp 16 Juta,2021,47545,Automatic,DKI Jakarta,Bensin,160000000
+Suzuki,Ertiga 1.5 Sport MPV - Dp 19 Juta,2020,62560,Automatic,DKI Jakarta,Bensin,180500000
+Honda,"HR-V 1.5 E SUV - , Hrv CVT, HRV Sunroof, Irit bbm",2017,42540,Automatic,DKI Jakarta,Bensin,175000000
+Mitsubishi,Xpander Cross 1.5 MPV - Premium,2021,30027,Automatic,DKI Jakarta,Bensin,232000000
+Toyota,Corolla Cross 1.8 Hybrid SUV,2022,15012,Automatic,Banten,Hybrid,326000000
+Toyota,Voxy 2.0 MPV - ..GARANSI 1TH AC MESIN TRANSMSII..JAMINAN BEBAS BEKAS BANJIR DAN LAKA,2020,45042,Automatic,Jawa Barat,Bensin,290000000
+Suzuki,Baleno 1.4 Hatchback,2021,37535,Automatic,DKI Jakarta,Bensin,191000000
+Hyundai,Stargazer 1.5 Trend MPV,2022,47545,Automatic,DKI Jakarta,Bensin,180000000
+Toyota,Raize 1.0 T G (1 Tone) SUV,2024,20017,Automatic,DKI Jakarta,Bensin,209000000
+Toyota,Yaris Cross 1.5 S HV SUV,2023,25022,Automatic,DKI Jakarta,Hybrid,341000000
+BYD,Dolphin Premium Extended Range Hatchback - 0.0 Dual Tone AT Grey Black NIK LOW KM 10RB,2024,7505,Automatic,DKI Jakarta,Bensin,295000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4X2 SUV - 4x2 Diesel Sunroof AT Silver Metalik NIK LOW KM,2019,22520,Automatic,DKI Jakarta,Diesel,365000000
+Chery,Omoda 5 1.5 RZ SUV - Luxury 230T Sunroof AT LOW KM 8RB,2023,5002,Automatic,Banten,Bensin,249000000
+Lexus,RX 300 2.0 F Sport SUV - 4x2 ATPM Facelift AT Black LOW KM,2021,20017,Automatic,Banten,Bensin,790000000
+Toyota,Kijang Innova Zenix 2.0 G (Non Premium Color) MPV - BODYKIT MODELISTA,2024,17515,Automatic,DKI Jakarta,Bensin,335000000
+Mazda,CX-3 1.5 Sport SUV - Sunroof Facelift AT Abu NIK GARANSI 5TH,2024,17515,Automatic,Banten,Bensin,289000000
+Toyota,Agya 1.2 GR Sport Hatchback,2022,15012,Manual,Banten,Bensin,134000000
+Suzuki,Baleno 1.4 Hatchback,2021,37535,Automatic,Jawa Barat,Bensin,190000000
+Toyota,Veloz 1.5 Q TSS (Premium Color) MPV,2023,22520,Automatic,Jawa Barat,Bensin,236000000
+Toyota,Veloz 1.5 Q TSS (Premium Color) MPV,2022,17515,Automatic,Jawa Barat,Bensin,238000000
+Toyota,Veloz 1.5 Q (Premium Color) MPV,2022,17515,Automatic,Banten,Bensin,238000000
+Nissan,Livina 1.5 VL MPV,2019,47545,Automatic,Jawa Barat,Bensin,175000009
+Nissan,Livina 1.5 VL MPV,2019,47545,Automatic,DKI Jakarta,Bensin,175000000
+Honda,Brio 1.2 Satya E Hatchback,2019,17515,Manual,Banten,Bensin,134000000
+Daihatsu,Ayla 1.0 X Hatchback,2021,10007,Manual,Banten,Bensin,107000000
+Nissan,Livina 1.5 VL MPV,2022,30027,Automatic,Jawa Barat,Bensin,204000000
+Hyundai,Creta 1.5 Prime SUV,2022,30027,Automatic,Banten,Bensin,258000000
+Honda,BR-V 1.5 Prestige Honda Sensing SUV - Prestige Sensing,2022,35032,Automatic,DKI Jakarta,Bensin,235000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2019,37535,Automatic,Banten,Bensin,193000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV,2021,30027,Automatic,Jawa Barat,Bensin,202000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV,2021,30027,Automatic,DKI Jakarta,Bensin,202000000
+Toyota,Yaris 1.5 TRD Sportivo 7 AB Hatchback,2021,17515,Automatic,Banten,Bensin,211000000
+Hyundai,Creta 1.5 Prime SUV,2023,27525,Automatic,Jawa Barat,Bensin,273000000
+Toyota,Kijang Innova 2.5 V MPV,2015,42540,Automatic,Banten,Bensin,279000000
+Toyota,Yaris 1.5 GR Sport 7 AB Hatchback,2021,30027,Automatic,Banten,Bensin,219000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2017,42540,Automatic,Banten,Bensin,165000000
+Toyota,Yaris 1.5 TRD Sportivo 7 AB Hatchback,2021,25022,Automatic,Banten,Bensin,211000000
+Toyota,Yaris Cross 1.5 S HV SUV,2023,22520,Automatic,Banten,Hybrid,341000000
+Honda,Brio 1.2 Satya E Hatchback,2023,7505,Automatic,Jawa Barat,Bensin,160000000
+Toyota,Rush 1.5 GR Sport SUV,2023,20017,Automatic,Banten,Bensin,248000000
+Suzuki,XL7 1.5 Alpha SUV,2021,35032,Automatic,DKI Jakarta,Bensin,206000000
+Honda,HR-V 1.5 Special Edition SUV,2023,27525,Automatic,Jawa Barat,Bensin,322000000
+Hyundai,Stargazer 1.5 Prime MPV,2022,52004,Automatic,Jawa Barat,Bensin,201000000
+Suzuki,XL7 1.5 Alpha SUV,2021,66423,Automatic,Jawa Barat,Bensin,206000000
+Jeep,Wrangler 3.6 Rubicon Unlimited 4 Door SUV,2014,25022,Automatic,Bali,Bensin,899000000
+Hyundai,Stargazer 1.5 Prime MPV,2022,27525,Automatic,Jawa Barat,Bensin,200000000
+Nissan,Livina 1.5 VL MPV - MATIC LOW KM 28RB ISTIMEWA,2021,15012,Automatic,Jawa Tengah,Bensin,199000000
+Hyundai,IONIQ 5 Signature Long Range SUV - 0.0,2023,15012,Automatic,DKI Jakarta,Elektrik,575000000
+Honda,HR-V 1.5 Special Edition SUV - km 28 rb,2023,15012,Automatic,DKI Jakarta,Bensin,309000000
+Toyota,Voxy 2.0 MPV - km 77 rb,2018,37535,Automatic,DKI Jakarta,Bensin,255000000
+Honda,Mobilio 1.5 E MPV,2016,37535,Manual,Jawa Barat,Bensin,130000000
+Hyundai,Creta 1.5 Prime SUV,2023,30027,Automatic,Jawa Barat,Bensin,270000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2023,17515,Automatic,Banten,Bensin,248000000
+Mercedes-Benz,E300 2.0 AMG Line Sedan,2025,2500,Automatic,DKI Jakarta,Bensin,1845000000
+Mercedes-Benz,CLA200 1.3 AMG Line Coupe,2025,2500,Automatic,DKI Jakarta,Bensin,1045000000
+Mercedes-Benz,S450L 3.0 Luxury 4MATIC Sedan,2024,2500,Automatic,DKI Jakarta,Bensin,2900000000
+Mercedes-Benz,GLB200 1.3 AMG Line SUV,2025,2500,Automatic,DKI Jakarta,Bensin,1250000000
+Mercedes-Benz,GLC300 2.0 AMG Line 4MATIC SUV,2025,2500,Automatic,DKI Jakarta,Bensin,1500000000
+Mercedes-Benz,GLE450 3.0 AMG Line 4MATIC SUV,2025,2500,Automatic,DKI Jakarta,Bensin,1950000000
+Mercedes-Benz,GLS450 3.0 AMG Line 4MATIC SUV,2024,2500,Automatic,DKI Jakarta,Bensin,2750000000
+Mercedes-Benz,Mercedes-Maybach GLS600 4.0 SUV,2025,2500,Automatic,DKI Jakarta,Bensin,10500000000
+Mercedes-Benz,G500 3.0 Professional Line SUV,2025,2500,Automatic,DKI Jakarta,Bensin,5645000000
+Mercedes-Benz,G580 EQ Edition One SUV - 0.0,2025,2500,Automatic,DKI Jakarta,Bensin,5850000000
+Mercedes-Benz,V250 2.0 Avantgarde Van,2024,2500,Automatic,DKI Jakarta,Bensin,2095000000
+Mercedes-Benz,SPRINTER 2.1 414 CDI A3 Van,2025,2500,Manual,DKI Jakarta,Bensin,1567000000
+Mercedes-Benz,EQA250 Electric Art Line SUV - 0.0,2024,2500,Automatic,DKI Jakarta,Elektrik,1270000000
+Mercedes-Benz,EQS450+ AMG Line Sedan - EQS450 0.0,2024,2500,Automatic,DKI Jakarta,Bensin,2550000000
+Mercedes-Benz,EQS450+ AMG Line Sedan - EQS450 0.0,2024,2500,Automatic,DKI Jakarta,Bensin,2999000000
+Mercedes-Benz,EQS450+ Edition One Sedan - EQS450 0.0,2024,2500,Automatic,DKI Jakarta,Bensin,2800000000
+Mercedes-Benz,AMG G63 4.0 SUV,2025,2500,Automatic,DKI Jakarta,Bensin,7700000000
+Mercedes-Benz,E300 2.0 AMG Line Sedan,2025,2500,Automatic,DKI Jakarta,Bensin,1600000000
+Mercedes-Benz,EQE350+ Electric Art Line Sedan - EQE350 0.0,2024,2500,Automatic,DKI Jakarta,Elektrik,1760000000
+Mitsubishi,XFORCE 1.5 Ultimate SUV,2024,7505,Automatic,Banten,Bensin,270000000
+Suzuki,Baleno 1.5 Hatchback,2024,7505,Automatic,Banten,Bensin,210000000
+Toyota,Fortuner 2.8 GR Sport 4X2 SUV - km 18 rb,2023,10007,Automatic,DKI Jakarta,Diesel,490000000
+KIA,Seltos 1.4 EX+ SUV - EX km 24 rb,2022,12510,Automatic,DKI Jakarta,Bensin,245000000
+Toyota,Fortuner 2.5 G SUV,2011,60057,Automatic,Jawa Timur,Bensin,205000000
+Honda,HR-V 1.8 Prestige SUV,2015,68300,Automatic,Jawa Barat,Bensin,197000000
+Honda,BR-V 1.5 E Prestige SUV,2017,79212,Automatic,Jawa Barat,Bensin,170000000
+Honda,Brio 1.2 Satya E Hatchback,2025,4700,Automatic,Jawa Barat,Bensin,185000000
+Honda,Brio 1.2 Satya E Hatchback,2019,53253,Automatic,Jawa Barat,Bensin,146000000
+Honda,City 1.5 RS Hatchback,2021,82441,Automatic,Jawa Barat,Bensin,214000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2023,30269,Automatic,Jawa Barat,Bensin,248000000
+Toyota,Kijang Innova 2.0 G MPV - km 34 rb,2022,17515,Automatic,DKI Jakarta,Bensin,289000000
+Mazda,3 2.0 SKYACTIV-G Hatchback - km 13 rb,2024,7505,Automatic,DKI Jakarta,Bensin,479000000
+Mazda,CX-3 1.5 Sport SUV - km 29 rb,2023,15012,Automatic,DKI Jakarta,Bensin,289000000
+Honda,CR-V 1.5 Black Edition SUV - km 46 rb,2022,22520,Automatic,DKI Jakarta,Bensin,459000000
+Chevrolet,TRAX 1.4 LTZ SUV - KM 27 RB. Masih Plastikan Kaya Baru,2017,12510,Automatic,DKI Jakarta,Bensin,149000000
+Honda,Civic 1.5 RS Sedan,2024,10007,Automatic,DKI Jakarta,Bensin,463000000
+Nissan,Serena 2.0 Highway Star MPV,2015,40037,Automatic,DKI Jakarta,Bensin,145000000
+Toyota,Fortuner 2.7 G Lux SUV - KM 52 RB. SiMPANAN KAYA BARU..,2011,25022,Automatic,DKI Jakarta,Bensin,190000000
+Volkswagen,Caravelle 2.0 TDI 7 seater MPV - KM 74 RB Record,2012,35032,Automatic,DKI Jakarta,Bensin,228000000
+Toyota,Avanza 1.5 Luxury Veloz MPV - Rapi Sekali Bagus..,2015,60057,Automatic,DKI Jakarta,Bensin,134000000
+Suzuki,Jimny 1.5 3 Door (2 Tone) SUV,2021,20017,Automatic,Jawa Timur,Bensin,395000000
+Honda,Accord 1.5 Sedan,2022,45042,Automatic,DKI Jakarta,Bensin,443000000
+Daihatsu,Rocky 1.0 R TC ASA SUV,2021,20017,Automatic,Jawa Barat,Bensin,188000000
+Honda,CR-V 1.5 Turbo Prestige SUV,2018,20017,Automatic,DKI Jakarta,Bensin,302000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV,2022,12510,Automatic,DKI Jakarta,Bensin,204000000
+Suzuki,Jimny 1.5 5 Door (2 Tone) SUV,2024,2500,Automatic,DKI Jakarta,Bensin,450000000
+Daihatsu,"Sigra 1.2 R MPV - Dp 10,5 Juta",2025,2500,Automatic,DKI Jakarta,Bensin,149000000
+Honda,"Brio 1.2 Satya E Hatchback - Dp 18,5 Juta",2017,50047,Automatic,DKI Jakarta,Bensin,117500000
+Toyota,Alphard 2.5 G MPV - Dp 80 Juta,2021,20017,Automatic,DKI Jakarta,Bensin,695000000
+Toyota,Avanza 1.3 E MPV - Dp 36 Juta,2020,72570,Manual,DKI Jakarta,Bensin,150000000
+Toyota,Calya 1.2 G MPV - Dp 10 Juta,2022,50047,Automatic,DKI Jakarta,Bensin,135000000
+Toyota,Rush 1.5 GR Sport SUV - Dp 15 Juta,2023,12510,Automatic,DKI Jakarta,Bensin,230000000
+Daihatsu,Gran Max 1.3 Blind AC Van,2020,40037,Manual,DKI Jakarta,Bensin,110000000
+Honda,Civic 1.5 RS Hatchback,2020,35032,Automatic,Jawa Timur,Bensin,395000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2024,12510,Automatic,Jawa Timur,Bensin,252000000
+Mitsubishi,Xpander 1.5 Ultimate MPV - AT HITAM,2020,32530,Automatic,Jawa Barat,Bensin,210000000
+Honda,HR-V 1.8 Prestige SUV,2019,30027,Automatic,Banten,Bensin,228000000
+Suzuki,Baleno 1.5 Hatchback,2024,7505,Automatic,DKI Jakarta,Bensin,215000000
+Toyota,Voxy 2.0 MPV,2018,25022,Automatic,DKI Jakarta,Bensin,245000000
+Honda,City 1.5 RS Hatchback,2022,22520,Automatic,DKI Jakarta,Bensin,205000000
+Subaru,WRX STi 2.5 4D Sedan,2013,12510,Automatic,DKI Jakarta,Bensin,410000000
+Honda,HR-V 1.5 Special Edition SUV,2025,2500,Automatic,Banten,Bensin,340000000
+Suzuki,Baleno 1.5 Hatchback,2024,27525,Automatic,DKI Jakarta,Bensin,198000000
+Wuling,Alvez 1.5 EX SUV,2023,12510,Automatic,Banten,Bensin,160000000
+Toyota,Calya 1.2 G MPV - TDP 12 JUTA ( FULL SERVICE RECORD ),2021,47545,Automatic,DKI Jakarta,Bensin,115000000
+Mazda,CX-5 2.5 Elite SUV,2019,37535,Automatic,Jawa Barat,Bensin,270000000
+Daihatsu,Gran Max 1.3 PU Box STD Pickup - TDP 10 JUTA,2021,40037,Manual,DKI Jakarta,Bensin,115000000
+Daihatsu,Gran Max 1.3 Blind AC Van - TDP 15 JUTA,2020,45042,Manual,Banten,Bensin,110000000
+Honda,HR-V 1.5 E SUV,2021,50047,Automatic,Jawa Barat,Bensin,234000000
+Toyota,Kijang Innova 2.4 V MPV,2019,35032,Automatic,DKI Jakarta,Bensin,372000000
+Suzuki,Ertiga 1.5 Hybrid GX MPV,2023,42540,Automatic,DKI Jakarta,Hybrid,216000000
+Toyota,Veloz 1.5 Q (Premium Color) MPV,2023,25022,Automatic,DKI Jakarta,Bensin,236000000
+Mitsubishi,Destinator 1.5 Ultimate Premium SUV - MATIC READY TANPA INDEN ISTIMEWA,2025,10007,Automatic,Jawa Tengah,Bensin,445000000
+Mercedes-Benz,GLB200 1.3 AMG Line SUV,2024,2500,Automatic,DKI Jakarta,Bensin,1080000000
+Mercedes-Benz,EQE350 4MATIC AMG Line SUV - 0.0,2024,2500,Automatic,DKI Jakarta,Bensin,2600000000
+Suzuki,Ertiga 1.5 GX MPV - TERMURAH BERKUALITAS BERGARANSI,2018,30027,Automatic,Jawa Barat,Bensin,170000000
+Suzuki,Ertiga 1.5 Hybrid SS MPV,2022,25022,Automatic,DKI Jakarta,Hybrid,206000000
+Mitsubishi,"Xpander 1.5 Ultimate MPV - KM Rendah, Siap Pakai, Harga Nego",2022,15012,Automatic,Banten,Bensin,251000000
+Suzuki,"Ertiga 1.5 Hybrid SS MPV - Matic, Mesin Halus, Nego Sampai Jadi",2022,25022,Automatic,Jawa Barat,Hybrid,204000000
+Toyota,Yaris Cross 1.5 S HV (2 Tone) w GR Parts Aero Pkg (Prem Clr) SUV - TSS,2023,15012,Automatic,Jawa Tengah,Hybrid,340000000
+Denza,D9 Advanced MPV - 0.0,2026,2500,Automatic,DKI Jakarta,Bensin,950000000
+Suzuki,XL7 1.5 Beta Hybrid SUV - KM 3 Ribu,2025,2500,Automatic,Jawa Tengah,Hybrid,250000000
+Toyota,Rush 1.5 GR Sport SUV,2022,10007,Automatic,Jawa Timur,Bensin,220000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2024,5002,Automatic,Jawa Timur,Bensin,252000000
+Suzuki,Baleno 1.5 Hatchback - AT KM ISTIMEWA,2023,12510,Automatic,Banten,Bensin,215000000
+Mazda,CX-5 2.5 Elite SUV - KM 52RB,2019,25022,Automatic,Banten,Bensin,289000000
+Hyundai,Stargazer 1.5 Active MPV,2022,10007,Automatic,Jawa Barat,Bensin,175000000
+Toyota,Calya 1.2 G MPV,2018,40037,Automatic,Jawa Barat,Bensin,117000000
+Toyota,Calya 1.2 G MPV,2023,5002,Automatic,Jawa Barat,Bensin,152000000
+Honda,BR-V 1.5 E Prestige SUV,2017,40037,Automatic,Jawa Barat,Bensin,175000000
+Honda,HR-V 1.8 Prestige SUV,2015,35032,Automatic,Jawa Barat,Bensin,203000000
+Toyota,Vellfire 2.5 G MPV - ATPM TDP 35 JUTA,2015,32530,Automatic,DKI Jakarta,Bensin,390000000
+Hyundai,Stargazer 1.5 Prime MPV,2023,20017,Automatic,DKI Jakarta,Bensin,198000000
+Toyota,Avanza 1.5 G MPV,2024,40037,Automatic,Jawa Barat,Bensin,210000000
+Honda,CR-V 1.5 Turbo SUV,2020,35032,Automatic,DKI Jakarta,Bensin,288000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2025,15012,Automatic,DKI Jakarta,Bensin,488000000
+Toyota,Fortuner 2.4 VRZ TRD 4X2 SUV,2019,45042,Automatic,DKI Jakarta,Diesel,388000000
+Toyota,Raize 1.0 T G (1 Tone) SUV,2024,10007,Automatic,DKI Jakarta,Bensin,195000000
+BMW,330i 2.0 M Sport Sedan,2016,15012,Automatic,DKI Jakarta,Bensin,400000000
+Lexus,RX 200t 2.0 F Sport SUV,2017,25022,Automatic,DKI Jakarta,Bensin,625000000
+BMW,320i 2.0 Sport Sedan,2013,10007,Automatic,DKI Jakarta,Bensin,275000000
+Honda,City 1.5 RS Hatchback,2022,22520,Automatic,Banten,Bensin,198000000
+Mazda,2 1.5 GT Hatchback,2015,25022,Automatic,DKI Jakarta,Bensin,155000000
+Hyundai,Tucson 2.0 GLS SUV,2018,47545,Automatic,Banten,Bensin,168000000
+Mercedes-Benz,C200 1.8 CGI Sedan,2013,25022,Automatic,Banten,Bensin,163000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV,2021,30027,Automatic,DKI Jakarta,Bensin,453000000
+Honda,HR-V 1.5 E Special Edition SUV - Dp 13 Juta,2019,40037,Automatic,DKI Jakarta,Bensin,195000000
+Toyota,Agya 1.2 G Hatchback - Dp 14 Juta,2025,10007,Automatic,DKI Jakarta,Bensin,150000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV - Dp 35 Juta,2022,25022,Automatic,DKI Jakarta,Bensin,205000000
+Honda,CR-V 1.5 Turbo Prestige SUV - Dp 15 Juta,2018,40037,Automatic,DKI Jakarta,Bensin,285000000
+Toyota,Sienta 1.5 Q MPV - Dp 20 Juta,2019,47545,Automatic,DKI Jakarta,Bensin,177500000
+Toyota,"Calya 1.2 G MPV - Dp 13,5 Juta",2020,60057,Automatic,DKI Jakarta,Bensin,122500000
+Mazda,CX-60 3.3 Kuro Edition SUV - (Hot Deals DP Minim),2023,15012,Automatic,Banten,Bensin,535000000
+Land,Rover Range Rover 3.0 P400 Autobiography MHEV SWB SUV - (Hot Deals Odo Very Low DP Minim),2022,5002,Automatic,Banten,Elektrik,4500000000
+Honda,HR-V 1.5 Special Edition SUV,2023,27525,Automatic,Jawa Barat,Bensin,331000000
+Honda,City 1.5 RS Honda Sensing Hatchback - RS Sensing,2022,42540,Automatic,Jawa Barat,Bensin,238000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV,2021,30027,Automatic,Jawa Barat,Bensin,205000000
+Toyota,Kijang Innova 2.4 V MPV,2022,37535,Automatic,Jawa Barat,Bensin,389000000
+Hyundai,Creta 1.5 Prime SUV,2022,30027,Automatic,Jawa Barat,Bensin,263000000
+Toyota,Yaris 1.5 TRD Sportivo 3 AB Hatchback,2021,17515,Automatic,Jawa Barat,Bensin,216000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2019,37535,Automatic,Jawa Barat,Bensin,198000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2022,27525,Automatic,Jawa Barat,Bensin,243000000
+Toyota,Raize 1.0 GR Sport (1 Tone) SUV,2022,17515,Automatic,DKI Jakarta,Bensin,218000000
+Toyota,Yaris 1.5 TRD Sportivo 3 AB Hatchback,2021,27525,Automatic,Jawa Barat,Bensin,217000000
+Toyota,Agya 1.2 GR Sport Hatchback,2022,17515,Manual,Jawa Barat,Bensin,138000000
+Honda,BR-V 1.5 Prestige Honda Sensing SUV - Prestige Sensing,2022,32530,Automatic,Jawa Barat,Bensin,242000000
+Honda,Brio 1.2 Satya E Hatchback,2023,10007,Automatic,Jawa Barat,Bensin,165000000
+Honda,Brio 1.2 Satya E Hatchback,2024,15012,Automatic,Jawa Barat,Bensin,175000000
+Honda,Accord 1.5 Sedan,2022,42540,Automatic,Jawa Barat,Bensin,455000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2018,42540,Automatic,Jawa Barat,Bensin,195000000
+Mercedes-Benz,E300 2.0 AMG Line Sedan,2018,12510,Automatic,DKI Jakarta,Bensin,475000000
+Mitsubishi,Xpander Cross 1.5 MPV,2020,25022,Automatic,Jawa Barat,Bensin,228000000
+Nissan,Livina 1.5 VL MPV,2022,30027,Automatic,Jawa Barat,Bensin,210000000
+Toyota,Raize 1.0 T G (1 Tone) SUV,2024,20017,Automatic,Jawa Barat,Bensin,214000000
+Toyota,Raize 1.0 GR Sport TSS (1 Tone) SUV,2022,12510,Automatic,Jawa Barat,Bensin,220000000
+Toyota,Raize 1.0 GR Sport TSS (1 Tone) SUV,2022,20017,Automatic,Jawa Barat,Bensin,218000000
+Toyota,Raize 1.2 G (1 Tone) SUV,2023,30027,Automatic,Jawa Barat,Bensin,195000000
+Toyota,Raize 1.0 GR Sport TSS (2 Tone) SUV,2021,30027,Automatic,Jawa Barat,Bensin,208000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2024,20017,Automatic,Jawa Barat,Bensin,455000000
+Toyota,Fortuner 2.4 VRZ GR SPORT 4X2 SUV,2021,30027,Automatic,Jawa Barat,Diesel,465000000
+Toyota,Kijang Innova 2.4 V MPV,2019,35032,Automatic,Jawa Barat,Bensin,382000000
+Toyota,Voxy 2.0 MPV,2020,42540,Automatic,Jawa Barat,Bensin,308000000
+Lexus,RX 270 2.7 SUV,2011,60057,Automatic,DKI Jakarta,Bensin,188000000
+Honda,Brio 1.2 Satya E Hatchback - LIKE NEW,2024,12510,Automatic,DKI Jakarta,Bensin,153000000
+Toyota,Alphard 2.5 G MPV,2023,20017,Automatic,DKI Jakarta,Bensin,798000000
+Hyundai,Stargazer 1.5 Prime MPV,2023,10007,Automatic,DKI Jakarta,Bensin,195000000
+Wuling,Almaz 1.5 Exclusive 5 Seater SUV,2019,32530,Automatic,DKI Jakarta,Bensin,149000000
+Honda,CR-V 2.4 SUV,2010,50047,Automatic,DKI Jakarta,Bensin,135000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV,2016,55052,Automatic,DKI Jakarta,Bensin,319000000
+Honda,WR-V 1.5 RS SUV - MATIC PAJAK BARU ISTIMEWA,2023,25022,Automatic,Jawa Tengah,Bensin,225000000
+Toyota,Kijang Innova 2.0 V MPV,2018,60057,Automatic,DKI Jakarta,Bensin,253500000
+Mercedes-Benz,GLE250 2.1 d SUV,2017,35032,Automatic,DKI Jakarta,Bensin,488000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV,2016,110107,Automatic,DKI Jakarta,Bensin,312000000
+Mercedes-Benz,GLC200 2.0 Night Edition AMG SUV - (good Deals DP Termurah),2019,15012,Automatic,Banten,Bensin,540000000
+Mercedes-Benz,G400 2.9 D AMG Line SUV - (Odod Very Low DP Minim),2023,5002,Automatic,Banten,Bensin,4250000000
+Toyota,Land Cruiser 3.3 300 VX-R (Premium Colour) SUV - (Odo Vey Low DP Minim),2025,10007,Automatic,Banten,Bensin,2325000000
+BMW,X1 1.5 sDrive18i xLine SUV - (Good Deals Like New),2023,2500,Automatic,Banten,Bensin,625000000
+BMW,X1 1.5 sDrive18i xLine SUV - (Good Deals DP Minim),2021,12510,Automatic,Banten,Bensin,435000000
+Lexus,RX 300 2.0 Luxury SUV - (Hot Deals DP Termurah),2020,25022,Automatic,Banten,Bensin,725000000
+BMW,Z4 3.0 M40i Convertible,2023,2500,Automatic,DKI Jakarta,Bensin,1465000000
+Subaru,BRZ 2.0 Coupe,2012,12510,Automatic,DKI Jakarta,Bensin,465000000
+Toyota,Vellfire 2.4 V MPV,2011,85082,Automatic,DKI Jakarta,Bensin,188000000
+Toyota,Yaris 1.5 G Hatchback,2017,32530,Automatic,DKI Jakarta,Bensin,148000000
+Mercedes-Benz,B200 1.6 Sport Hatchback,2014,17515,Automatic,DKI Jakarta,Bensin,188000000
+Mercedes-Benz,S350 L 3.5 Sedan,2014,12510,Automatic,DKI Jakarta,Bensin,398000000
+BMW,320i 2.0 Luxury Sedan,2018,12510,Automatic,DKI Jakarta,Bensin,338000000
+Mercedes-Benz,E300 2.0 AMG Line Sedan,2017,20017,Automatic,DKI Jakarta,Bensin,498000000
+Mercedes-Benz,GLC300 2.0 AMG Line 4MATIC SUV - (Good Deals Very Low Odo),2023,7505,Automatic,Banten,Bensin,1055000000
+Mercedes-Benz,C300 2.0 AMG Line Sedan - (Good Deals DP Minim),2024,5002,Automatic,Banten,Bensin,965000000
+Mercedes-Benz,GLE450 3.0 AMG Line 4MATIC SUV - (Good Deals Termurah),2022,15012,Automatic,Banten,Bensin,1185000000
+Toyota,Voxy 2.0 MPV - (Hot Deals DP Minim),2017,55052,Automatic,Banten,Bensin,229000000
+Peugeot,3008 1.6 GT Line SUV - (Good Deals DP Minim),2018,30027,Automatic,Banten,Bensin,222000000
+BMW,X1 1.5 sDrive18i xLine SUV - (Hot Deals DP Termurah),2020,17515,Automatic,Banten,Bensin,399000000
+Mitsubishi,Pajero Sport 2.5 Exceed SUV,2016,55052,Automatic,DKI Jakarta,Diesel,288000000
+Toyota,Kijang Innova 2.0 G Lux MPV,2011,55052,Automatic,DKI Jakarta,Bensin,135000000
+Toyota,Kijang Innova 2.4 V MPV,2017,17515,Automatic,DKI Jakarta,Bensin,335000000
+Land,Rover Range Rover Sport 3.0 HSE SUV,2014,37535,Automatic,DKI Jakarta,Bensin,668000000
+Mazda,CX-80 2.5 Elite PHEV SUV,2025,2500,Automatic,DKI Jakarta,Elektrik,998000000
+Chery,Tiggo 8 1.5 CSH Premium AWD SUV - Turbo Hybrid Panoramic AT Hijau NIK LOW KM 5RB,2025,5002,Automatic,DKI Jakarta,Hybrid,435000000
+Toyota,Agya 1.2 G Hatchback - CVT Facelift AT Merah Metalik NIK GARANSI 5TH,2023,5002,Automatic,DKI Jakarta,Bensin,145000000
+Toyota,Fortuner 2.8 GR Sport 4X2 SUV - 4x2 Diesel Kick Sensor AT Hitam GARANSI 5TH,2024,17515,Automatic,Banten,Diesel,475000000
+Volkswagen,Tiguan 1.4 TSI Allspace SUV - AT Hitam Pemakaian 2022 NIK 202 LOW KM,2021,22520,Automatic,Banten,Bensin,269000000
+GWM,Haval Jolion 1.5 HEV SUV - Hybrid HDT AT Hitam Metalik NIK LOW KM 1RB,2025,2500,Automatic,Banten,Elektrik,290000000
+Honda,Brio 1.2 Satya E Hatchback - CVT AT Merah NIK LOW KM 29RB,2019,15012,Automatic,DKI Jakarta,Bensin,129000000
+Hyundai,Creta 1.5 Prime SUV - IVT BOSE AT Putih NIK GARANSI 5TH,2022,25022,Automatic,Banten,Bensin,245000000
+Toyota,Alphard 2.5 G MPV - Pilot Seat AT Putih GARANSI 5TH,2019,40037,Automatic,Banten,Bensin,530000000
+Honda,HR-V 1.5 Turbo RS SUV - Sensing CVT AT Hitam Mutiara NIK GARANSI 5TH,2024,10007,Automatic,Banten,Bensin,375000000
+BAIC,BJ40 Plus 2.0 Wagon - Turbo 4x4 AWD AT Hijau Metalik NIK LOW KM 3RB,2025,2500,Automatic,DKI Jakarta,Bensin,550000000
+Toyota,Kijang Innova Zenix 2.0 Q HV TSS Modellista (Premium Color) MPV,2023,10007,Automatic,DKI Jakarta,Hybrid,477000000
+Toyota,Voxy 2.0 MPV,2018,22520,Automatic,Banten,Bensin,240000000
+Hyundai,Stargazer X 1.5 Prime MPV,2023,2500,Automatic,DKI Jakarta,Bensin,245000000
+Honda,Mobilio 1.5 E MPV,2016,52550,Automatic,DKI Jakarta,Bensin,110000000
+BYD,M6 Superior 7-seaters MPV - 0.0,2025,15012,Automatic,DKI Jakarta,Bensin,340000000
+MG,HS 1.5 Ignite SUV,2022,40037,Automatic,DKI Jakarta,Bensin,195000000
+Honda,HR-V 1.8 Prestige SUV,2016,60057,Automatic,DKI Jakarta,Bensin,185000000
+BYD,Seal Premium Extended Range Sedan - 0.0,2024,15012,Automatic,DKI Jakarta,Bensin,430000000
+BYD,Seal Performance AWD Sedan - 0.0,2024,10007,Automatic,DKI Jakarta,Bensin,475000000
+Nissan,X-Trail 2.0 SUV,2013,47545,Automatic,DKI Jakarta,Bensin,98000000
+DFSK,Glory 580 1.8 Luxury Version SUV,2018,40037,Automatic,DKI Jakarta,Bensin,95000000
+Toyota,Fortuner 2.8 VRZ 4X2 SUV,2022,50047,Automatic,DKI Jakarta,Bensin,385000000
+Chery,Tiggo 8 1.6 Premium SUV,2025,15012,Automatic,DKI Jakarta,Bensin,295000000
+Hyundai,Santa Fe 2.2 Signature SUV,2022,42540,Automatic,DKI Jakarta,Bensin,379000000
+Hyundai,Stargazer 1.5 Prime MPV - At Matic B Genap Warenty On 25Juta Dinar Auto,2023,53000,Automatic,Banten,Bensin,184000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV - KILOMETER RENDAH - SIAP PAKAI - TERMURAH,2022,12510,Automatic,Banten,Bensin,204000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV,2022,23908,Automatic,Jawa Barat,Bensin,204000000
+Hyundai,Creta 1.5 Prime SUV,2023,73378,Automatic,Jawa Barat,Bensin,266000000
+Mitsubishi,Xpander 1.5 Ultimate MPV,2022,46835,Automatic,Jawa Barat,Bensin,243000000
+Hyundai,Stargazer 1.5 Prime MPV - KM 50RB Record,2024,25022,Automatic,Banten,Bensin,204000000
+Honda,HR-V 1.5 Special Edition SUV - SENSING MATIC ISTIMEWA TERMURAH,2022,20017,Automatic,Jawa Tengah,Bensin,289000000
+Hyundai,Creta 1.5 Prime SUV - MATIC TIPE TERTINGGI ISTIMEWA,2022,20017,Automatic,Jawa Tengah,Bensin,265000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4X2 SUV - KM 39RB,2021,20017,Automatic,Banten,Diesel,434000000
+Mazda,3 2.0 SKYACTIV-G Sedan - MATIC KONDISI ISTIMEWA LEBIH MURAH DARI HATCHBACK,2023,10007,Automatic,Jawa Tengah,Bensin,365000000
+Toyota,Fortuner 2.7 G Lux SUV,2010,42540,Automatic,Jawa Tengah,Bensin,175000000
+Toyota,Vellfire 2.4 ZG MPV,2014,70067,Automatic,DKI Jakarta,Bensin,310000000
+Volkswagen,Tiguan 1.4 TSI Allspace SUV,2022,22520,Automatic,DKI Jakarta,Bensin,310000000
+Toyota,Alphard 2.4 G MPV,2012,57555,Automatic,Sulawesi Utara,Bensin,190000000
+Lexus,RX 270 2.7 SUV,2011,25022,Automatic,DKI Jakarta,Bensin,235000000
+Porsche,911 3.0 Carrera Coupe,2025,2500,Automatic,DKI Jakarta,Bensin,4300000000
+Mitsubishi,Pajero Sport 2.5 Dakar 4X2 SUV,2016,37535,Automatic,Banten,Diesel,349000000
+Honda,Brio 1.2 RS Hatchback,2022,40037,Automatic,Jawa Timur,Bensin,175000000
+Honda,CR-V 1.5 Turbo Prestige SUV - NEGO,2019,12510,Automatic,Jawa Tengah,Bensin,400000000
+MINI,Clubman 1.6 Cooper S Wagon,2008,7505,Automatic,DKI Jakarta,Bensin,460000000
+Honda,Brio 1.2 Satya E Hatchback,2021,30027,Automatic,DKI Jakarta,Bensin,140000000
+Mazda,CX-5 2.5 GT SUV,2019,47545,Automatic,DKI Jakarta,Bensin,277000000
+Mercedes-Benz,E300 2.0 Avantgarde SportStyle Sedan,2019,17515,Automatic,DKI Jakarta,Bensin,512000000
+Mercedes-Benz,GLB200 1.3 Progressive Line SUV,2022,27525,Automatic,Sulawesi Selatan,Bensin,655000000
+Audi,Q5 2.0 TFSI SUV,2011,52550,Automatic,DKI Jakarta,Bensin,230000000
+Toyota,Fortuner 2.8 GR Sport 4X2 SUV,2022,6100,Automatic,Banten,Diesel,500000000
+Honda,HR-V 1.5 Special Edition SUV,2022,25022,Automatic,Yogyakarta,Bensin,308000000
+Mercedes-Benz,GLC200 2.0 AMG Line SUV,2021,17515,Automatic,DKI Jakarta,Bensin,625000000
+Mercedes-Benz,CLA200 1.6 AMG Coupe,2016,40037,Automatic,DKI Jakarta,Bensin,365000000
+Toyota,Fortuner 2.5 G VNT SUV - mulus istimewa,2013,77575,Automatic,DKI Jakarta,Diesel,240000000
+Toyota,"Alphard 2.5 G MPV - 2,5 A T",2018,42540,Automatic,DKI Jakarta,Bensin,450000000
+BMW,330i 2.0 M Sport Sedan,2022,20017,Automatic,Bali,Bensin,775000000
+Toyota,Alphard 2.4 SC MPV,2012,107605,Automatic,Jawa Barat,Bensin,200000000
+Hyundai,Stargazer 1.5 Active MPV,2022,10007,Automatic,Jawa Barat,Bensin,169000000
+Mercedes-Benz,A200 1.3 Progressive Line Sedan - TDP 34 JT AN,2025,2500,Automatic,DKI Jakarta,Bensin,890000000
+Toyota,Sienta 1.5 V MPV,2017,25022,Automatic,Jawa Timur,Bensin,165000000
+Nissan,Livina 1.5 VE MPV,2019,37535,Automatic,DKI Jakarta,Bensin,167000000
+Hyundai,Creta 1.5 Style SUV,2022,27525,Automatic,Jawa Barat,Bensin,235000000
+Hyundai,Creta 1.5 Prime SUV,2023,30027,Automatic,DKI Jakarta,Bensin,273000000
+Suzuki,Baleno 1.4 Hatchback,2019,35032,Automatic,DKI Jakarta,Bensin,167000000
+Hyundai,Creta 1.5 Style SUV,2022,27525,Automatic,Jawa Barat,Bensin,222000000
+Wuling,Cloud EV 460KM Hatchback - 0.0,2024,12510,Automatic,Banten,Elektrik,245000000
+Honda,Accord 1.5 Sedan,2022,42540,Automatic,DKI Jakarta,Bensin,443000000
+Mazda,3 2.0 SKYACTIV-G Hatchback,2022,20017,Automatic,Jawa Tengah,Bensin,410000000
+Wuling,Air EV Standard Range Hatchback - 0.0,2023,15012,Automatic,DKI Jakarta,Elektrik,100000000
+Toyota,Kijang Innova 2.0 G MPV - Dp 11 Juta,2020,45042,Automatic,DKI Jakarta,Bensin,239000000
+Datsun,Cross 1.2 MPV - Dp 33 Juta,2018,42540,Automatic,DKI Jakarta,Bensin,97500000
+Daihatsu,Xenia 1.3 X MPV - Dp 29 Juta,2020,50047,Manual,DKI Jakarta,Bensin,145000000
+Daihatsu,Terios 1.5 X ADS SUV - Dp 16 Juta,2024,12510,Automatic,DKI Jakarta,Bensin,210000000
+Suzuki,XL7 1.5 Alpha Hybrid SUV - Dp 24 Juta,2023,12510,Automatic,Jawa Barat,Hybrid,225000000
+Mitsubishi,Xpander 1.5 Ultimate MPV - Dp 27 Juta,2023,15012,Automatic,DKI Jakarta,Bensin,245000000
+Mitsubishi,Outlander Sport 2.0 PX SUV - Dp 49 Juta,2013,75072,Automatic,Jawa Barat,Bensin,144000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2023,27525,Automatic,DKI Jakarta,Bensin,405000009
+Mazda,CX-5 2.5 Elite SUV - (Low km) (Dp Minim),2019,40037,Automatic,DKI Jakarta,Bensin,276000000
+Honda,HR-V 1.5 Special Edition SUV - (Super low 1rb km),2025,2500,Automatic,DKI Jakarta,Bensin,339000000
+Chevrolet,TRAX 1.4 LTZ SUV - (Tdp 15jt) (Low km),2017,30027,Automatic,DKI Jakarta,Bensin,136000000
+Suzuki,SX4 S-Cross 1.5 Hatchback - (Km antik 12rb) (Tdp Minim),2022,7505,Automatic,DKI Jakarta,Bensin,205000000
+Toyota,Avanza 1.5 G MPV - (Warranty On) (Tdp 15jt) (Km Antik),2023,17515,Automatic,DKI Jakarta,Bensin,189000000
+Hyundai,Stargazer 1.5 Prime MPV - (Km 20rb-an) (Tdp 10jt),2022,15012,Automatic,DKI Jakarta,Bensin,195000000
+Toyota,Rush 1.5 TRD Sportivo SUV - (Tdp 5jt) Pajak bulan 1-2027,2020,40037,Automatic,DKI Jakarta,Bensin,190000000
+Mercedes-Benz,CLA200 1.6 AMG Coupe - (Dp Minim),2016,25022,Automatic,DKI Jakarta,Bensin,262000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV - (Dp minim),2017,67565,Automatic,DKI Jakarta,Bensin,340000000
+Toyota,Kijang Innova Zenix 2.0 V HV Modellista (Premium Color) MPV - (Low km 27rb),2023,15012,Automatic,DKI Jakarta,Hybrid,420000000
+Hyundai,Stargazer X 1.5 Prime MPV,2024,2500,Automatic,DKI Jakarta,Bensin,248000000
+Honda,CR-V 1.5 Turbo Prestige SUV,2019,50047,Automatic,DKI Jakarta,Bensin,321000000
+Honda,BR-V 1.5 Prestige SUV,2022,22520,Automatic,Jawa Barat,Bensin,220000000
+Suzuki,Ertiga 1.4 GX MPV - Manual,2013,35032,Manual,Jawa Timur,Bensin,120000000
+Toyota,Voxy 2.0 (Premium Color) MPV,2022,68330,Automatic,Jawa Barat,Bensin,370000000
+Honda,City 1.5 RS Hatchback,2023,55340,Automatic,Jawa Barat,Bensin,229000000
+Toyota,Corolla Cross 1.8 Hybrid SUV,2022,26977,Automatic,Jawa Barat,Hybrid,326000000
+Suzuki,Baleno 1.5 Hatchback,2023,55532,Automatic,Jawa Barat,Bensin,214000000
+Mitsubishi,XFORCE 1.5 Ultimate SUV,2023,43706,Automatic,Jawa Barat,Bensin,292000000
+Honda,CR-V 1.5 Turbo Prestige SUV,2018,39981,Automatic,Jawa Barat,Bensin,302000000
+Nissan,March 1.2 Hatchback,2017,99969,Automatic,Jawa Barat,Bensin,107000000
+Toyota,Avanza 1.5 Veloz MPV,2017,45042,Automatic,Jawa Timur,Bensin,155000000
+Honda,BR-V 1.5 Prestige SUV - Bonus voucher bensin Up to 1.6 Mio dan Diskon Up to 10 Mio,2022,22520,Automatic,Banten,Bensin,221000000
+Toyota,Voxy 2.0 MPV,2020,45042,Automatic,Jawa Barat,Bensin,300000000
+Daihatsu,Rocky 1.0 R TC ADS SUV - Bonus voucher bensin Up to 1.5 Mio dan Diskon Up to 1.5 Mio,2021,20017,Automatic,Jawa Barat,Bensin,185000000
+Daihatsu,Rocky 1.2 X SUV - Bonus Voucher bensin Up to 1.5 Mio dan Diskon Up to 15 Mio,2022,40037,Automatic,Jawa Barat,Bensin,180000000
+Toyota,Rush 1.5 TRD Sportivo SUV - Bonus Voucher Bensin Up to Mio dan Diskon Up to 10 Mio,2018,40037,Automatic,Jawa Barat,Bensin,187000000
+Honda,HR-V 1.5 Special Edition SUV - Bonus Voucher Bensin Up to Mio dan Diskon Up to 25 Mio,2023,10007,Automatic,DKI Jakarta,Bensin,325000000
+Honda,HR-V 1.5 E Special Edition SUV - Bonus Voucher Bensin Up to Mio dan Diskon up to 10 Mio,2021,27525,Automatic,Jawa Barat,Bensin,238000000
+Toyota,Rush 1.5 GR Sport SUV - Bonus Voucher BBM Up To Mio dan Diskon Up to 10 Mio,2023,17515,Automatic,DKI Jakarta,Bensin,248000000
+Honda,BR-V 1.5 E Prestige SUV - Bonus Voucher bensin Up to Mio dan Diskon Up to 10 Mio,2016,47545,Automatic,Jawa Barat,Bensin,162000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV,2021,32530,Automatic,Jawa Barat,Bensin,453000000
+Mitsubishi,Xpander Cross 1.5 MPV - Promo DP Ringan atau Angsuran Ringan,2020,25022,Automatic,Jawa Barat,Bensin,223000000
+Mitsubishi,Pajero Sport 2.4 Dakar Ultimate 4X2 SUV,2022,17515,Automatic,DKI Jakarta,Diesel,425000000
+Toyota,Agya 1.2 G Hatchback,2023,20017,Automatic,Jawa Barat,Bensin,155000000
+Mercedes-Benz,E350 2.0 AMG EQ Boost Sedan - LOW KM,2019,12510,Automatic,Banten,Bensin,649000000
+Suzuki,Jimny 1.5 3 Door (1 Tone) SUV - 4x4 Allgrip AT KM 24 Rb Pajak Panjang (ANTIK) TDP Rendah,2021,12510,Automatic,Yogyakarta,Bensin,380000000
+BMW,530i 2.0 M Sport Sedan - KM 44 Rb Pajak Panjang (ANTIK) TDP MINIM,2019,22520,Automatic,Yogyakarta,Bensin,555000000
+Hyundai,Palisade 2.2 Signature SUV - KM 41 Rb (ANTIK) TDP MINIM,2021,22520,Automatic,Yogyakarta,Bensin,575000000
+Toyota,Kijang Innova Zenix 2.0 V HV Modellista (Premium Color) MPV - KM 30 Rb (ANTIK) TDP MINIM,2023,15012,Automatic,Yogyakarta,Hybrid,440000000
+BMW,320i 2.0 Sport Sedan - Matic KM 35 Rb (ANTIK) Pajak Panjang,2020,17515,Automatic,Yogyakarta,Bensin,495000000
+Honda,City 1.5 RS Hatchback - Matic KM 37 Rb (ANTIK) TDP MINIM,2022,20017,Automatic,Yogyakarta,Bensin,225000000
+Mazda,CX-7 2.3 GT SUV - AT KM 34 Rb (ANTIK) TDP 25 Jt,2012,17515,Automatic,Yogyakarta,Bensin,135000000
+Toyota,Fortuner 2.4 VRZ 4X2 SUV - Promo DP Ringan atau Angsuran Ringan,2021,30027,Automatic,DKI Jakarta,Bensin,463000000
+Toyota,Rush 1.5 TRD Sportivo SUV,2018,40037,Automatic,DKI Jakarta,Bensin,187000000
+Honda,BR-V 1.5 E Prestige SUV,2016,37535,Automatic,Banten,Bensin,164000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV,2021,27525,Automatic,DKI Jakarta,Bensin,195000000
+MINI,Countryman 2.0 Cooper S SUV,2022,5002,Automatic,DKI Jakarta,Bensin,659000000
+Toyota,Kijang Innova 2.4 Q MPV,2016,47545,Automatic,DKI Jakarta,Bensin,299000000
+Mitsubishi,Pajero Sport 2.4 Dakar Ultimate 4X2 SUV,2023,12510,Automatic,DKI Jakarta,Diesel,479000000
+Honda,Civic 1.5 E Hatchback,2020,25022,Automatic,Jawa Timur,Bensin,395000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4X2 SUV,2017,25022,Automatic,Jawa Timur,Diesel,355000000
+Toyota,Camry 2.5 V Sedan,2020,7505,Automatic,DKI Jakarta,Bensin,349000000
+Mazda,CX-5 2.5 GT SUV - FACELIFT MATIC ISTIMEWA,2021,20017,Automatic,Jawa Tengah,Bensin,335000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback - MATIC WARNA LEMON FAVORITE,2019,25022,Automatic,Jawa Tengah,Bensin,195000000
+Daihatsu,Gran Max 1.5 Mini Bus D PS Van,2017,137635,Manual,Jawa Timur,Bensin,139000000
+Suzuki,Ertiga 1.4 GL MPV,2015,110107,Manual,Jawa Timur,Bensin,129000000
+Mazda,2 1.5 R Hatchback,2011,80077,Automatic,Jawa Timur,Bensin,95000000
+Toyota,Kijang Innova 2.5 G MPV,2012,92590,Automatic,Jawa Timur,Bensin,220000000
+Honda,CR-V 2.4 SUV,2005,95092,Automatic,Jawa Timur,Bensin,90000000
+Toyota,Kijang Innova 2.4 V TRD Sportivo MPV,2020,67565,Automatic,Jawa Timur,Diesel,385000000
+Toyota,Calya 1.2 G MPV - TDP 10 JUTA,2024,25022,Automatic,Banten,Bensin,125000000
+Toyota,Calya 1.2 G MPV - TDP 10 JUTA,2019,52550,Automatic,DKI Jakarta,Bensin,99000000
+Mazda,CX-8 2.5 SKYACTIV-G Elite SUV - TDP 25 JUTA,2021,47545,Automatic,Banten,Bensin,328000000
+Suzuki,SX4 S-Cross 1.5 Hatchback,2022,7505,Automatic,Banten,Bensin,198000000
+Daihatsu,Terios 1.5 R SUV - Dp 18 Juta,2022,37535,Manual,DKI Jakarta,Bensin,190000000
+Toyota,Avanza 1.3 G MPV - Dp 23 Juta,2021,45042,Automatic,DKI Jakarta,Bensin,167500000
+Toyota,Raize 1.0 GR Sport TSS (1 Tone) SUV - Dp 24 Juta,2022,17515,Automatic,DKI Jakarta,Bensin,205000000
+Honda,"Mobilio 1.5 E MPV - Dp 13,5 Juta",2021,42540,Automatic,DKI Jakarta,Bensin,157500000
+Toyota,Agya 1.2 GR Sport Hatchback - Dp 12 Juta,2022,20017,Automatic,DKI Jakarta,Bensin,137500000
+Toyota,Avanza 1.3 G MPV - Dp 23 Juta,2021,50047,Automatic,DKI Jakarta,Bensin,167500000
+Toyota,Avanza 1.5 G MPV - MANUAL TERMURAH,2022,35032,Manual,Jawa Tengah,Bensin,179000000
+KIA,Sonet 1.5 Premiere SUV - Sunroof BOSE AT Putih NIK LOW KM 21RB,2023,12510,Automatic,DKI Jakarta,Bensin,229000000
+Hyundai,Santa Fe 1.6 Calligraphy HEV SUV - HEV Hybrid 6Seat AT Hitam NIK KM LOW,2024,7505,Automatic,DKI Jakarta,Elektrik,690000000
+Toyota,Vellfire 2.5 G MPV - AT Pilot Seat AT Putih Metalik NIK GARANSI 5TH,2018,40037,Automatic,DKI Jakarta,Bensin,520000000
+Lexus,LM 350h 2.5 4 Seater MPV - Hybrid Executive VIP 2 2 AT Sonic Titanium NIK VIP 2 2,2025,5002,Automatic,Banten,Hybrid,2350000000
+Toyota,Vellfire 2.5 G MPV - AT Pilot Seat AT Black On Black NIK GARANSI 5TH,2018,37535,Automatic,DKI Jakarta,Bensin,519000000
+Honda,HR-V 1.5 Special Edition SUV - CVT Sensing Panoramic AT Abu Metalik NIK LOW KM 12RB,2024,7505,Automatic,Banten,Bensin,325000000
+Chery,Tiggo 5x 1.5 Champion SUV - Sunroof AT Hitam NIK GARANSI 5TH,2024,12510,Automatic,DKI Jakarta,Bensin,185000000
+Hyundai,Santa Fe 2.2 Signature SUV - Diesel Panoramic AT Putih NIK GARANSI 5TH,2024,12510,Automatic,DKI Jakarta,Bensin,439000000
+Mercedes-Benz,GLA200 1.6 Urban SUV - X156 Grey KM LOW,2016,17515,Automatic,Banten,Bensin,250000000
+Nissan,Livina 1.5 VE MPV - 4x2 AT Hitam NIK GARANSI 5TH,2021,32530,Automatic,DKI Jakarta,Bensin,170000000
+Honda,CR-V 2.0 RS e:HEV SUV - RS e HEV Sensing Facelift AT Merah NIK LOW KM 17RB,2024,10007,Automatic,Banten,Elektrik,570000000
+Mitsubishi,Destinator 1.5 Ultimate Premium (Quartz White Pearl) SUV - LOW KM 2RB,2025,10007,Automatic,Banten,Bensin,452000000
+Hyundai,Santa Fe 2.2 Grand CRDi SUV,2019,55052,Automatic,Jawa Timur,Bensin,370000000
+Hyundai,Stargazer X 1.5 Prime MPV,2024,2500,Automatic,Banten,Bensin,243000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4X2 SUV,2017,47545,Automatic,Jawa Timur,Diesel,355000000
+Hyundai,Creta 1.5 Prime SUV,2022,22520,Automatic,DKI Jakarta,Bensin,268000000
+Toyota,Veloz 1.5 Q TSS (Premium Color) MPV - SIAP PAKAI - KONDISI ISTIMEWA,2022,20017,Automatic,DKI Jakarta,Bensin,238000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2022,30027,Automatic,Jawa Barat,Bensin,239000000
+Honda,Mobilio 1.5 E MPV - Bonus Voucher bensin Up to Mio dan Diskon Up to 10 Mio,2016,40037,Manual,DKI Jakarta,Bensin,133000000
+Nissan,Livina 1.5 VE MPV,2021,47545,Automatic,DKI Jakarta,Bensin,179000000
+Honda,WR-V 1.5 RS Honda Sensing SUV - RS Sensing,2022,27525,Automatic,DKI Jakarta,Bensin,239000000
+Honda,BR-V 1.5 E Prestige SUV,2016,40037,Automatic,Jawa Barat,Bensin,164000000
+Honda,BR-V 1.5 E Prestige SUV - At PUTIH,2016,30027,Automatic,DKI Jakarta,Bensin,161000000
+Toyota,Calya 1.2 G MPV - AT PUTIH KM ISTIMEWA,2024,12510,Automatic,DKI Jakarta,Bensin,158000000
+Toyota,Alphard 2.5 G MPV,2022,12510,Automatic,DKI Jakarta,Bensin,775000000
+Honda,HR-V 1.5 Special Edition SUV,2025,14406,Automatic,Jawa Barat,Bensin,351000000
+Mitsubishi,Xpander Cross 1.5 Premium MPV,2023,69736,Automatic,Jawa Barat,Bensin,268000000
+Hyundai,Creta 1.5 Prime SUV,2022,42609,Automatic,Jawa Barat,Bensin,268000000
+Toyota,Avanza 1.5 G MPV,2024,80436,Automatic,Jawa Barat,Bensin,212000000
+Honda,Brio 1.2 Satya E Hatchback,2019,42540,Automatic,DKI Jakarta,Bensin,146000000
+Hyundai,Creta 1.5 Prime SUV - AT PUTIH,2023,27525,Automatic,DKI Jakarta,Bensin,268000000
+Honda,HR-V 1.5 Special Edition SUV - AT PUTIH ISTIMEWA,2023,27525,Automatic,DKI Jakarta,Bensin,320000000
+Hyundai,Creta 1.5 Style SUV,2023,15012,Automatic,Jawa Timur,Bensin,255000000
+Hyundai,Stargazer 1.5 Prime MPV,2023,15012,Automatic,Jawa Timur,Bensin,217000000
+Suzuki,Ertiga 1.5 Hybrid Cruise (2 Tone) MPV,2024,20017,Automatic,Jawa Timur,Hybrid,235000000
+Toyota,Sienta 1.5 Q MPV,2017,25022,Automatic,Jawa Timur,Bensin,178000000
+Mitsubishi,Pajero Sport 2.4 Dakar 4x2 SUV,2022,15012,Automatic,DKI Jakarta,Diesel,525000000
+Hyundai,Santa Fe 2.5 Calligraphy SUV,2025,2500,Automatic,DKI Jakarta,Bensin,815000000
+Toyota,Fortuner 2.8 GR Sport 4X2 SUV,2022,27525,Automatic,DKI Jakarta,Diesel,500000000
+Hyundai,Stargazer X 1.5 Prime MPV,2023,15012,Automatic,DKI Jakarta,Bensin,260000000
+Toyota,Raize 1.0 GR Sport (1 Tone) SUV,2025,5002,Automatic,DKI Jakarta,Bensin,265000000
+Toyota,Raize 1.0 GR Sport (1 Tone) SUV,2024,2500,Automatic,DKI Jakarta,Bensin,250000000
+Toyota,Yaris Cross 1.5 S HV SUV,2023,15012,Automatic,DKI Jakarta,Hybrid,360000000
+Hyundai,Creta 1.5 Prime SUV,2023,10007,Automatic,DKI Jakarta,Bensin,300000000
+Toyota,Yaris 1.5 E Hatchback,2012,47545,Automatic,Banten,Bensin,105000000
+Mazda,CX-5 2.5 Grand Touring SUV,2014,57555,Automatic,Banten,Bensin,153000000
+Mitsubishi,Pajero Sport 2.4 Dakar Ultimate 4X2 SUV,2022,15012,Automatic,Jawa Barat,Diesel,420000000
+BMW,520i 2.0 M Sport Sedan - Warranty Service Inclusive ON,2021,5002,Automatic,Banten,Bensin,657000000
+Honda,CR-V 1.5 Turbo Prestige SUV - Promo DP Ringan atau Angsuran Ringan,2021,42540,Automatic,DKI Jakarta,Bensin,394000000
+Mercedes-Benz,GLC200 2.0 AMG SUV - GLC43 Style Tahun,2017,17515,Automatic,DKI Jakarta,Bensin,388000000
+Daihatsu,Xenia 1.3 X MPV,2017,25022,Automatic,Jawa Timur,Bensin,137000000
+Suzuki,Baleno 1.5 Hatchback - AT GREY KM ISTIMEWA,2023,12510,Automatic,DKI Jakarta,Bensin,215000000
+Hyundai,Creta 1.5 Style SUV - AT KN ISTIMEWA,2023,20017,Automatic,DKI Jakarta,Bensin,237000000
+Toyota,Yaris 1.5 E Hatchback,2013,47545,Manual,Jawa Timur,Bensin,105000000
+Toyota,Rush 1.5 TRD Sportivo SUV,2017,55052,Automatic,Jawa Timur,Bensin,165000000
+Hyundai,Creta 1.5 Prime SUV - AT PUTIH,2023,27525,Automatic,DKI Jakarta,Bensin,273000000
+Mercedes-Benz,CLA200 1.3 AMG Line Coupe,2025,2500,Automatic,DKI Jakarta,Bensin,1115000000
+Hyundai,H-1 2.4 Royale Limited MPV - BENSIN TDP 10 JUTA,2020,27525,Automatic,DKI Jakarta,Bensin,275000000
+Hyundai,Palisade 2.2 Signature SUV - TDP 20 JUTA,2021,32530,Automatic,DKI Jakarta,Bensin,485000000
+BMW,520i 2.0 M Sport Sedan - KM 4.rbOxide Grey,2024,2500,Automatic,DKI Jakarta,Bensin,1169000000
+Toyota,Fortuner 2.4 VRZ TRD 4X2 SUV,2021,57600,Automatic,Banten,Diesel,463000000
+Toyota,Agya 1.2 G Hatchback,2023,40435,Automatic,Banten,Bensin,155000000
+Honda,BR-V 1.5 E Prestige SUV,2016,92246,Automatic,Jawa Barat,Bensin,162000000
+Honda,BR-V 1.5 Prestige SUV,2021,40037,Automatic,Jawa Barat,Bensin,204000000
+Toyota,Veloz 1.5 Q TSS (Non Premium Color) MPV,2022,17515,Automatic,Jawa Barat,Bensin,238000000
+Honda,"Mobilio 1.5 E MPV - 1,5",2016,75020,Manual,DKI Jakarta,Bensin,133000000
+Toyota,Sienta 1.5 Q MPV - km 42 rb,2019,22520,Automatic,DKI Jakarta,Bensin,185000000
+Hyundai,Stargazer 1.5 Prime MPV - km 16 rb,2024,10007,Automatic,DKI Jakarta,Bensin,235000000
+Toyota,Kijang Innova 2.4 V MPV - Diskon Up to 20 juta special this week,2022,37535,Automatic,DKI Jakarta,Bensin,390000000
+BMW,X1 1.5 sDrive18i xLine SUV - Part Service Warranty ON until 2028,2023,7505,Automatic,Banten,Bensin,651000000
+Hyundai,Creta 1.5 Style SUV - At GREY KM SPESIAL,2023,20017,Automatic,DKI Jakarta,Bensin,238000000
+Toyota,Yaris 1.5 GR Sport 7 AB Hatchback,2022,22520,Automatic,Jawa Barat,Bensin,234000000
+Toyota,Yaris 1.5 TRD Sportivo 7 AB Hatchback - DP 30 Juta Angs 5 jutaan,2021,27525,Automatic,Jawa Barat,Bensin,211000000
+Toyota,Yaris 1.5 TRD Sportivo 7 AB Hatchback - DP 30 juta Angs 5jutaan,2020,30027,Automatic,Jawa Barat,Bensin,206000000
+Hyundai,Stargazer 1.5 Prime MPV,2024,30027,Automatic,DKI Jakarta,Bensin,245000000
+BMW,M4 3.0 Coupe - F82 LCI Look Tahun Austin Yellow on Black Merino Leather,2014,10007,Automatic,Banten,Bensin,1285000000
+Honda,BR-V 1.5 Prestige Honda Sensing SUV - Prestige Sensing,2023,25022,Automatic,DKI Jakarta,Bensin,247000000
+Honda,WR-V 1.5 RS SUV,2023,27525,Automatic,DKI Jakarta,Bensin,229000000
+Toyota,Alphard 2.5 GSC Package MPV - SC Premium Sound CBU Japan Tahun,2015,27525,Automatic,Banten,Bensin,459000000
+Mitsubishi,Pajero Sport 2.5 Dakar 4X2 SUV - Dp 13 Juta,2015,80077,Automatic,DKI Jakarta,Diesel,245000000
+Suzuki,Ertiga 1.4 Dreza MPV - Dp 21 Juta,2016,110107,Manual,DKI Jakarta,Bensin,136500000
+Mitsubishi,Xpander 1.5 Ultimate MPV - Dp 40 Juta,2023,30027,Automatic,DKI Jakarta,Bensin,240000000
+Toyota,Agya 1.0 TRD S Hatchback - Dp 19 Juta,2016,55052,Automatic,Jawa Barat,Bensin,97500000
+Toyota,"Calya 1.2 G MPV - Dp 12,5 Juta",2019,67565,Manual,DKI Jakarta,Bensin,112500000
+Wuling,Almaz 1.5 Exclusive 5 Seater SUV,2019,42540,Automatic,Jawa Timur,Bensin,155000000
+Mazda,CX-5 2.5 Grand Touring SUV,2014,57555,Automatic,DKI Jakarta,Bensin,155000000
+Nissan,Juke 1.5 RX SUV - Cash 107 JT NEGO,2011,62560,Automatic,DKI Jakarta,Bensin,100000000
+Mitsubishi,Xpander Cross 1.5 MPV,2021,27525,Automatic,DKI Jakarta,Bensin,232000000
+Toyota,Raize 1.0 GR Sport (2 Tone) SUV - Biru Metalik Promo DP Minim Mlv,2021,25022,Automatic,Jawa Barat,Bensin,195000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2019,37535,Automatic,DKI Jakarta,Bensin,193000009
+Toyota,Yaris 1.5 E Hatchback,2012,50047,Automatic,DKI Jakarta,Bensin,109000000
+Nissan,Livina 1.5 VE MPV - Promo DP Ringan atau Angsuran Ringan,2019,37535,Automatic,DKI Jakarta,Bensin,168000000
+Daihatsu,Gran Max 1.3 PU STD Pickup - TDP 10 JUTA,2013,55052,Manual,DKI Jakarta,Bensin,65000000
+BMW,X3 2.0 sDrive20i SUV,2019,15012,Automatic,DKI Jakarta,Bensin,579000000
+BMW,X1 1.5 sDrive18i xLine SUV,2023,17515,Automatic,DKI Jakarta,Bensin,769000000
+BMW,X1 1.5 sDrive18i xLine SUV,2023,20017,Automatic,DKI Jakarta,Bensin,769000000
+BMW,X3 2.0 sDrive20i SUV,2019,22520,Automatic,DKI Jakarta,Bensin,579000000
+BMW,X6 3.0 xDrive40i M Sport SUV,2020,5002,Automatic,DKI Jakarta,Bensin,1499000000
+MINI,Cooper 2.0 S 3 Door Hatchback - 3 Door,2022,4801,Automatic,DKI Jakarta,Bensin,699000000
+Hyundai,Creta 1.5 Prime SUV,2022,22520,Automatic,Jawa Barat,Bensin,265000000
+Hyundai,Stargazer 1.5 Active MPV - Promo DP Ringan atau Angsuran Ringan,2022,10007,Automatic,Jawa Barat,Bensin,170000000
+Nissan,Livina 1.5 VL MPV - PROMO DP Minim,2019,47545,Automatic,Jawa Barat,Bensin,175000000
+Daihatsu,Sigra 1.2 R Deluxe MPV,2018,25022,Automatic,Jawa Barat,Bensin,119000000
+Toyota,Calya 1.2 G MPV - Promo DP minim Mulvi,2018,55052,Automatic,DKI Jakarta,Bensin,114000000
+Suzuki,Ertiga 1.5 Hybrid SS MPV - Promo DP Minim,2022,25022,Automatic,Jawa Barat,Hybrid,209000000
+Daihatsu,Rocky 1.2 X SUV - Promo DP minim Mulvi,2022,40037,Automatic,Jawa Barat,Bensin,180000000
+Toyota,Veloz 1.5 Q (Premium Color) MPV,2023,22520,Automatic,Jawa Barat,Bensin,236000000
+Honda,HR-V 1.5 Special Edition SUV,2023,32530,Automatic,DKI Jakarta,Bensin,321000000
+Toyota,Agya 1.0 E Hatchback,2016,12510,Automatic,Jawa Barat,Bensin,97000000
+Toyota,Yaris 1.5 TRD Sportivo Hatchback,2020,30027,Automatic,Jawa Barat,Bensin,210000000
+Toyota,Voxy 2.0 MPV,2020,42540,Automatic,Jawa Barat,Bensin,305000000
+Toyota,Voxy 2.0 MPV,2021,42540,Automatic,Jawa Barat,Bensin,325000000
+Nissan,Livina 1.5 VL MPV,2019,47545,Automatic,Jawa Barat,Bensin,174600000
+Hyundai,Creta 1.5 Prime SUV,2023,27525,Automatic,Jawa Barat,Bensin,278000000
+Mercedes-Benz,AMG G63 4.0 SUV - Black on Black Odo 40 Rb (TERMURAH),2021,20017,Automatic,DKI Jakarta,Bensin,4500000000
+Toyota,Calya 1.2 G MPV - Promo DP Ringan atau Angsuran Ringan,2023,5002,Automatic,Jawa Barat,Bensin,148000000
+Mercedes-Benz,CLS400 3.0 Amg Dynamic Coupe - (Good Deals Very Low Odo),2015,12510,Automatic,Banten,Bensin,538000000
+Mercedes-Benz,AMG G63 4.0 Offroad Pro SUV - (Brand New),2026,2500,Automatic,Banten,Bensin,7449000000
+Peugeot,3008 1.6 Active SUV - (Good Deals DP Minim),2021,20017,Automatic,Banten,Bensin,269000000
+Mercedes-Benz,GLA200 1.3 AMG Line SUV - (Good Deals DP Minim),2022,10007,Automatic,Banten,Bensin,499000000
+Chery,Omoda 5 1.5 Z SUV - (Good Deals DP Minim),2023,17515,Automatic,Banten,Bensin,225000000
+Mercedes-Benz,E250 2.0 Avantgarde CBU Sedan - (Good Deals DP Minim),2016,12510,Automatic,Banten,Bensin,339000000
+Lexus,RX 300 2.0 F Sport SUV - (Good Deals DP Minim),2021,12510,Automatic,Banten,Bensin,799000000
+Lexus,NX 300 2.0 F Sport SUV - (Good Deals DP Minim),2019,22520,Automatic,Banten,Bensin,469000000
+Honda,CR-V 1.5 Black Edition SUV,2022,22520,Automatic,DKI Jakarta,Bensin,459000000
+Toyota,Rush 1.5 TRD Sportivo SUV,2018,25022,Automatic,Jawa Timur,Bensin,195000000
