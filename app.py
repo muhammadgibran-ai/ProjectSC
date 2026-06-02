@@ -307,11 +307,11 @@ if page == "🏠 Beranda":
                 <div class='stat-label'>Total Data Listing</div>
             </div>
             <div class='stat-card'>
-                <div class='stat-value'>90.06%</div>
+                <div class='stat-value'>86.48%</div>
                 <div class='stat-label'>Akurasi Model (R²)</div>
             </div>
             <div class='stat-card'>
-                <div class='stat-value'>8.51%</div>
+                <div class='stat-value'>9.99%</div>
                 <div class='stat-label'>Rata-rata Error (MAPE)</div>
             </div>
         </div>
@@ -324,13 +324,13 @@ if page == "🏠 Beranda":
         <div class='premium-card'>
             <div class='premium-title'>Tentang Sistem Cerdas Ini</div>
             <p style='color:#cbd5e1; font-size:15px; line-height:1.6;'>
-                Sistem ini dibangun untuk membantu pelaku bisnis otomotif, dealer mobil bekas, maupun konsumen individu dalam memperkirakan harga jual kendaraan secara objektif. Menggunakan metode <b>Artificial Neural Network (ANN)</b> tipe <b>Multi-Layer Perceptron (MLP)</b> dengan arsitektur 3 dense layers, model ini dilatih secara khusus untuk mendeteksi hubungan non-linear antara umur kendaraan, kilometer pemakaian, merek, model, transmisi, lokasi, dan jenis bahan bakar dengan nilai depresiasi harga kendaraan di Indonesia.
+                Sistem ini dibangun untuk membantu pelaku bisnis otomotif, dealer mobil bekas, maupun konsumen individu dalam memperkirakan harga jual kendaraan secara objektif. Menggunakan metode <b>Artificial Neural Network (ANN)</b> tipe <b>Multi-Layer Perceptron (MLP)</b> dengan arsitektur 4 dense layers (128-64-32-1) dilengkapi <b>L2 Regularization</b> dan <b>Dropout</b> untuk pencegahan overfitting, model ini dilatih secara khusus untuk mendeteksi hubungan non-linear antara umur kendaraan, kilometer pemakaian, merek, model, transmisi, lokasi, dan jenis bahan bakar dengan nilai depresiasi harga kendaraan di Indonesia.
             </p>
             <p style='color:#cbd5e1; font-size:15px; line-height:1.6;'>
                 <b>Keunggulan Sistem:</b>
                 <ul style='color:#cbd5e1; margin-left: 20px;'>
                     <li><b>Data Riil & Terkini:</b> Dataset dikumpulkan dari pasar otomotif Indonesia secara langsung (carmudi.co.id) mencakup data hingga tahun 2026.</li>
-                    <li><b>Akurasi Sangat Tinggi:</b> Dengan target optimasi MAPE sebesar 8.51% (target maksimal ketetapan proyek 10%), sistem ini memberikan presisi prediksi yang andal.</li>
+                    <li><b>Akurasi Tinggi & Good Fit:</b> Dengan MAPE sebesar 9.99% (memenuhi batas maksimal 10%), model ini terbukti <b>Good Fit</b> dengan selisih MAPE train-test hanya 2.83%.</li>
                     <li><b>Metodologi Ilmiah:</b> Model dilatih dengan mengoptimasi Relative Percentage Error (MAPE) melalui integrasi One-Hot Encoding dan standardisasi scaling.</li>
                 </ul>
             </p>
@@ -464,7 +464,7 @@ elif page == "🔮 Prediksi Harga":
             <div class='result-card'>
                 <div style='font-size:16px; color:#cbd5e1; font-weight:600;'>HARGA ESTISIMA PASARAN YANG DISARANKAN</div>
                 <div class='result-price'>Rp {pred_rupiah:,.0f}</div>
-                <div class='result-range'>Rentang Harga Wajar (±8.51% MAPE): <b>Rp {pred_rupiah * 0.9149:,.0f} - Rp {pred_rupiah * 1.0851:,.0f}</b></div>
+                <div class='result-range'>Rentang Harga Wajar (±9.99% MAPE): <b>Rp {pred_rupiah * 0.9001:,.0f} - Rp {pred_rupiah * 1.0999:,.0f}</b></div>
                 <p style='color:#a7f3d0; font-size:12px; margin-top:8px;'>Nilai depresiasi dipengaruhi oleh odometer {mileage:,.0f} KM dan usia kendaraan {age} tahun di daerah {location}.</p>
             </div>
             """, unsafe_allow_html=True)
@@ -568,29 +568,33 @@ elif page == "🧠 Performa JST":
         <div class='premium-card'>
             <div class='premium-title'>Arsitektur Jaringan</div>
             <table style='width:100%; border-collapse: collapse; margin-top:10px; color:#cbd5e1;'>
-                <tr style='border-bottom: 2px solid rgba(255,255,255,0.1);'><th style='padding:8px;'>Layer Tipe</th><th>Ukuran Output</th><th>Fungsi Aktivasi</th><th>Jumlah Parameter</th></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Input (Fitur Mobil)</b></td><td>Dimension: 44</td><td>-</td><td>0</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Dense_1 (Hidden)</b></td><td>64</td><td>ReLU</td><td>2,880</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Dense_2 (Hidden)</b></td><td>32</td><td>ReLU</td><td>2,080</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Output (Log Harga)</b></td><td>1</td><td>Linear (Regresi)</td><td>33</td></tr>
+                <tr style='border-bottom: 2px solid rgba(255,255,255,0.1);'><th style='padding:8px;'>Layer Tipe</th><th>Ukuran Output</th><th>Fungsi Aktivasi</th><th>Regularisasi</th></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Input (Fitur Mobil)</b></td><td>Dimension: 65</td><td>-</td><td>-</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Dense_1 (Hidden)</b></td><td>128</td><td>ReLU</td><td>L2(0.0003) + Dropout(0.1)</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Dense_2 (Hidden)</b></td><td>64</td><td>ReLU</td><td>L2(0.0003) + Dropout(0.05)</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Dense_3 (Hidden)</b></td><td>32</td><td>ReLU</td><td>L2(0.0003)</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px;'><b>Output (Log Harga)</b></td><td>1</td><td>Linear (Regresi)</td><td>-</td></tr>
             </table>
             <br>
             <b>Optimasi Model:</b>
             <ul style='color:#cbd5e1; margin-top:5px; margin-left:20px;'>
                 <li><b>Loss Function:</b> Mean Squared Error (MSE) dihitung pada skala logaritma harga untuk menyeimbangkan variasi harga mobil murah dan mahal.</li>
-                <li><b>Optimizer:</b> Adam dengan learning rate 0.005 untuk laju konvergensi yang cepat dan stabil.</li>
-                <li><b>Pencegahan Overfitting:</b> Implementasi Early Stopping memantau validation loss dengan batas toleransi (patience) 20 epochs.</li>
+                <li><b>Optimizer:</b> Adam dengan learning rate 0.001 dan ReduceLROnPlateau (factor=0.5, patience=10).</li>
+                <li><b>Pencegahan Overfitting:</b> L2 Regularization (0.0003) + Dropout (0.1/0.05) + Early Stopping (patience=25, restore_best_weights=True).</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class='premium-card'>
-            <div class='premium-title'>Metrik Evaluasi Model</div>
+            <div class='premium-title'>Metrik Evaluasi Model (Good Fit)</div>
             <table style='width:100%; border-collapse: collapse; margin-top:10px; color:#cbd5e1;'>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>Mean Absolute Percentage Error (Test MAPE)</td><td style='color:#10b981; font-weight:700;'>8.51%</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>Koefisien Determinasi (R² Score)</td><td style='color:#10b981; font-weight:700;'>0.9006</td></tr>
-            <p style='font-size:12px; color:#94a3b8; margin-top:10px;'>Akurasi sebesar 90.06% R² mengindikasikan bahwa model dapat menjelaskan lebih dari 90% variasi penyebaran harga mobil bekas di pasar sekunder Indonesia berdasarkan masukan spesifikasi yang diberikan.</p>
+                <tr style='border-bottom: 2px solid rgba(255,255,255,0.1);'><td style='padding:8px; font-weight:600;'>Metrik</td><td style='font-weight:600;'>TRAIN</td><td style='font-weight:600;'>TEST</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAPE (%)</td><td style='color:#10b981; font-weight:700;'>7.17%</td><td style='color:#10b981; font-weight:700;'>9.99%</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>R² Score</td><td style='color:#10b981; font-weight:700;'>0.9315</td><td style='color:#10b981; font-weight:700;'>0.8648</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAE (Juta Rp)</td><td style='color:#10b981; font-weight:700;'>17.78</td><td style='color:#10b981; font-weight:700;'>24.98</td></tr>
+            </table>
+            <p style='font-size:12px; color:#94a3b8; margin-top:10px;'>Model berstatus <b>GOOD FIT</b>: selisih MAPE train-test hanya 2.83% (ideal &le; 5%), menunjukkan model mampu menggeneralisasi dengan baik tanpa overfitting.</p>
         </div>
         """, unsafe_allow_html=True)
         

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-from keras import layers
+from keras import layers, regularizers
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pickle
@@ -42,14 +42,21 @@ def clean_location(loc_str):
         return "Lainnya"
 
 def build_model(input_dim):
-    # Simple MLP which generalizes best for this dataset size
+    # MLP with light regularization - balanced for MAPE < 10% and Good Fit
     model = keras.Sequential([
-        layers.Dense(64, activation='relu', input_shape=(input_dim,)),
-        layers.Dense(32, activation='relu'),
+        layers.Input(shape=(input_dim,)),
+        layers.Dense(128, activation='relu',
+                     kernel_regularizer=regularizers.l2(0.0003)),
+        layers.Dropout(0.1),
+        layers.Dense(64, activation='relu',
+                     kernel_regularizer=regularizers.l2(0.0003)),
+        layers.Dropout(0.05),
+        layers.Dense(32, activation='relu',
+                     kernel_regularizer=regularizers.l2(0.0003)),
         layers.Dense(1, activation='linear')
     ])
-    
-    optimizer = keras.optimizers.Adam(learning_rate=0.005)
+
+    optimizer = keras.optimizers.Adam(learning_rate=0.001)
     model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])
     return model
 
@@ -106,38 +113,97 @@ def run_training():
     
     early_stopping = keras.callbacks.EarlyStopping(
         monitor='val_loss',
-        patience=20,
+        patience=25,
         restore_best_weights=True
     )
-    
-    print("Training Simple MLP...")
+
+    # Reduce LR when val_loss plateaus for additional stability
+    reduce_lr = keras.callbacks.ReduceLROnPlateau(
+        monitor='val_loss',
+        factor=0.5,
+        patience=10,
+        min_lr=1e-5,
+        verbose=1
+    )
+
+    print("Training MLP (Light Regularization - Target MAPE < 10%)...")
     history = model.fit(
         X_train, y_train,
         validation_split=0.15,
-        epochs=150,
-        batch_size=16,
-        callbacks=[early_stopping],
+        epochs=300,
+        batch_size=24,
+        callbacks=[early_stopping, reduce_lr],
         verbose=1
     )
     
-    # Evaluate
-    y_pred_log = model.predict(X_test).flatten()
-    
-    # Inverse transform
+    # ── Evaluate on TEST set ────────────────────────────────────────────────
+    y_pred_log_test = model.predict(X_test).flatten()
     y_test_orig = np.exp(y_test)
-    y_pred_orig = np.exp(y_pred_log)
-    
-    # Metrik
-    mae = np.mean(np.abs(y_test_orig - y_pred_orig))
-    mape = np.mean(np.abs((y_test_orig - y_pred_orig) / y_test_orig)) * 100
-    ss_res = np.sum((y_test_orig - y_pred_orig) ** 2)
-    ss_tot = np.sum((y_test_orig - np.mean(y_test_orig)) ** 2)
-    r2 = 1 - (ss_res / ss_tot)
-    
-    print(f"\n--- Final Model Evaluation (Original Juta Rp) ---")
-    print(f"Test MAE: {mae:.2f} Juta Rupiah")
-    print(f"R2 Score: {r2:.4f}")
-    print(f"Test MAPE: {mape:.2f}%")
+    y_pred_test_orig = np.exp(y_pred_log_test)
+
+    test_mae  = np.mean(np.abs(y_test_orig - y_pred_test_orig))
+    test_mape = np.mean(np.abs((y_test_orig - y_pred_test_orig) / y_test_orig)) * 100
+    ss_res_t  = np.sum((y_test_orig - y_pred_test_orig) ** 2)
+    ss_tot_t  = np.sum((y_test_orig - np.mean(y_test_orig)) ** 2)
+    test_r2   = 1 - (ss_res_t / ss_tot_t)
+
+    # ── Evaluate on TRAIN set (for Good Fit comparison) ─────────────────────
+    y_pred_log_train = model.predict(X_train).flatten()
+    y_train_orig = np.exp(y_train)
+    y_pred_train_orig = np.exp(y_pred_log_train)
+
+    train_mae  = np.mean(np.abs(y_train_orig - y_pred_train_orig))
+    train_mape = np.mean(np.abs((y_train_orig - y_pred_train_orig) / y_train_orig)) * 100
+    ss_res_tr  = np.sum((y_train_orig - y_pred_train_orig) ** 2)
+    ss_tot_tr  = np.sum((y_train_orig - np.mean(y_train_orig)) ** 2)
+    train_r2   = 1 - (ss_res_tr / ss_tot_tr)
+
+    # Final epoch val_loss & train_loss
+    final_train_loss = history.history['loss'][-1]
+    final_val_loss   = history.history['val_loss'][-1]
+    best_val_loss    = min(history.history['val_loss'])
+    best_train_loss  = min(history.history['loss'])
+    # Pakai best val loss dan best train loss (bukan epoch terakhir)
+    # Jika dropout aktif, train loss bisa lebih besar dari val loss -> bukan overfitting
+    gap_ratio        = best_val_loss / best_train_loss if best_train_loss > 0 else 1.0
+
+    # ── Good Fit Indicator Report ────────────────────────────────────────────
+    print("\n" + "=" * 60)
+    print("         INDIKATOR KONDISI MODEL (GOOD FIT CHECK)")
+    print("=" * 60)
+    print(f"  {'Metrik':<30} {'TRAIN':>10} {'TEST':>10}")
+    print("-" * 60)
+    print(f"  {'MAE (Juta Rp)':<30} {train_mae:>10.2f} {test_mae:>10.2f}")
+    print(f"  {'MAPE (%)':<30} {train_mape:>10.2f} {test_mape:>10.2f}")
+    print(f"  {'R2 Score':<30} {train_r2:>10.4f} {test_r2:>10.4f}")
+    print("-" * 60)
+    print(f"  {'MSE Loss (terakhir)':<30} {final_train_loss:>10.4f} {final_val_loss:>10.4f}")
+    print(f"  {'Best Val Loss':<30} {best_val_loss:>10.4f}")
+    print(f"  {'Rasio Val/Train Loss':<30} {gap_ratio:>10.2f}x")
+    print("=" * 60)
+
+    # ── Interpretasi otomatis ────────────────────────────────────────────────
+    mape_diff = abs(train_mape - test_mape)
+    r2_diff   = abs(train_r2 - test_r2)
+    print("\n  [INTERPRETASI]")
+    if mape_diff <= 5.0 and test_mape <= 15.0:
+        print("  [GOOD FIT] Gap train/val kecil, MAPE train & test mendekati")
+        print(f"     MAPE selisih {mape_diff:.2f}% (ideal <= 5%)")
+        print(f"     Selisih R2  {r2_diff:.4f}  (ideal <= 0.05)")
+        print(f"     Status      : MODEL SIAP DIGUNAKAN")
+    elif mape_diff > 5.0 and train_mape < test_mape:
+        print(f"  [OVERFITTING] MAPE selisih {mape_diff:.2f}% (ideal <= 5%)")
+        print("     Model terlalu hafal data training.")
+    elif test_mape > 15.0:
+        print(f"  [UNDERFITTING] MAPE test {test_mape:.2f}% terlalu tinggi (ideal <= 15%)")
+        print("     Model belum belajar dengan cukup.")
+    else:
+        print(f"  [PERIKSA] MAPE selisih {mape_diff:.2f}% - evaluasi lebih lanjut")
+    print("=" * 60)
+
+    # alias untuk generate_jupyter_notebook
+    mape = test_mape
+    r2   = test_r2
     
     # Save Model
     model_save_path = os.path.join(project_dir, "model_harga_mobil.h5")
@@ -199,7 +265,7 @@ def generate_jupyter_notebook(project_dir, test_mape, r2):
                     "import seaborn as sns\n",
                     "import tensorflow as tf\n",
                     "from tensorflow import keras\n",
-                    "from keras import layers\n",
+                    "from keras import layers, regularizers\n",
                     "from sklearn.model_selection import train_test_split\n",
                     "from sklearn.preprocessing import StandardScaler\n",
                     "import pickle\n",
@@ -338,12 +404,16 @@ def generate_jupyter_notebook(project_dir, test_mape, r2):
                 "outputs": [],
                 "source": [
                     "model = keras.Sequential([\n",
-                    "    layers.Dense(64, activation='relu', input_shape=(X.shape[1],)),\n",
-                    "    layers.Dense(32, activation='relu'),\n",
+                    "    layers.Input(shape=(X.shape[1],)),\n",
+                    "    layers.Dense(128, activation='relu', kernel_regularizer=regularizers.l2(0.0003)),\n",
+                    "    layers.Dropout(0.1),\n",
+                    "    layers.Dense(64, activation='relu', kernel_regularizer=regularizers.l2(0.0003)),\n",
+                    "    layers.Dropout(0.05),\n",
+                    "    layers.Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.0003)),\n",
                     "    layers.Dense(1, activation='linear')\n",
                     "])\n",
                     "\n",
-                    "optimizer = keras.optimizers.Adam(learning_rate=0.005)\n",
+                    "optimizer = keras.optimizers.Adam(learning_rate=0.001)\n",
                     "model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])\n",
                     "model.summary()"
                 ]
@@ -361,14 +431,15 @@ def generate_jupyter_notebook(project_dir, test_mape, r2):
                 "metadata": {},
                 "outputs": [],
                 "source": [
-                    "early_stopping = keras.callbacks.EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)\n",
+                    "early_stopping = keras.callbacks.EarlyStopping(monitor='val_loss', patience=25, restore_best_weights=True)\n",
+                    "reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=10, min_lr=1e-5, verbose=1)\n",
                     "\n",
                     "history = model.fit(\n",
                     "    X_train, y_train,\n",
                     "    validation_split=0.15,\n",
-                    "    epochs=150,\n",
-                    "    batch_size=16,\n",
-                    "    callbacks=[early_stopping],\n",
+                    "    epochs=300,\n",
+                    "    batch_size=24,\n",
+                    "    callbacks=[early_stopping, reduce_lr],\n",
                     "    verbose=1\n",
                     ")"
                 ]
