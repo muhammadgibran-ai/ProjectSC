@@ -1,12 +1,8 @@
-# Core Data libraries (tanpa TensorFlow - model dijalankan dengan pure numpy)
-scikit-learn==1.4.2
-pandas==2.2.2
-numpy==1.26.4
-matplotlib==3.9.2
-seaborn==0.13.2
-
-# Streamlit
-streamlit==1.35.0
-
-# HTTP requests - untuk download model dari GitHub Release
-requests==2.31.0
+# Semua library tanpa pin versi - biarkan pip resolve yang kompatibel dengan Python 3.14
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+streamlit
+requests
