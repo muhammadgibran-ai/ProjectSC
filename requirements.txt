@@ -9,5 +9,5 @@ seaborn==0.13.2
 # Streamlit
 streamlit==1.35.0
 
-# HuggingFace Hub - untuk download model .h5 dari HF Hub
-huggingface_hub==0.23.4
+# HTTP requests - untuk download model dari GitHub Release
+requests==2.31.0

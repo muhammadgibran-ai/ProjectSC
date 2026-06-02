@@ -5,46 +5,59 @@ import tensorflow as tf
 from tensorflow import keras
 import pickle
 import os
+import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ============================================================
-# HuggingFace Hub - Auto-download model files
+# GitHub Release - Auto-download model files
 # ============================================================
-# Ganti nilai ini dengan username HuggingFace Anda dan nama repo
-HF_REPO_ID = "YOUR_HF_USERNAME/proyek-sistem-cerdas-mobil"  # TODO: ganti sesuai repo HF Anda
+# Model files dihosting di GitHub Release agar tidak melebihi batas file GitHub (100MB)
+GITHUB_RELEASE_BASE = "https://github.com/muhammadgibran-ai/ProjectSC/releases/download/v1.0.0"
+
+def _download_file(url: str, dest_path: str, label: str):
+    """Download file dari URL dengan progress bar Streamlit."""
+    with requests.get(url, stream=True, timeout=120) as r:
+        r.raise_for_status()
+        total = int(r.headers.get('content-length', 0))
+        downloaded = 0
+        progress = st.progress(0, text=f"⏳ Mengunduh {label}...")
+        with open(dest_path, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=8192):
+                f.write(chunk)
+                downloaded += len(chunk)
+                if total > 0:
+                    pct = min(downloaded / total, 1.0)
+                    progress.progress(pct, text=f"⏳ Mengunduh {label}... {downloaded//1024//1024}MB / {total//1024//1024}MB")
+        progress.empty()
 
 @st.cache_resource(show_spinner=False)
 def ensure_model_files():
-    """Download model files from HuggingFace Hub if not already present locally."""
+    """Download model files dari GitHub Release jika belum ada di lokal."""
     project_dir = os.path.dirname(os.path.abspath(__file__))
     model_target = os.path.join(project_dir, "model_harga_mobil.h5")
     prep_target  = os.path.join(project_dir, "preprocessors.pkl")
     
-    if not os.path.exists(model_target) or not os.path.exists(prep_target):
-        try:
-            from huggingface_hub import hf_hub_download
-            if not os.path.exists(model_target):
-                with st.spinner("⏳ Mengunduh model AI dari HuggingFace Hub... (pertama kali ~1 menit)"):
-                    hf_hub_download(
-                        repo_id=HF_REPO_ID,
-                        filename="model_harga_mobil.h5",
-                        local_dir=project_dir,
-                        local_dir_use_symlinks=False
-                    )
-            if not os.path.exists(prep_target):
-                hf_hub_download(
-                    repo_id=HF_REPO_ID,
-                    filename="preprocessors.pkl",
-                    local_dir=project_dir,
-                    local_dir_use_symlinks=False
-                )
-        except Exception as e:
-            st.error(f"❌ Gagal mengunduh model dari HuggingFace: {e}")
-            return False
-    return True
+    files_needed = [
+        ("model_harga_mobil.h5", model_target, "Model AI (.h5)"),
+        ("preprocessors.pkl",  prep_target,  "Preprocessor (.pkl)"),
+    ]
+    
+    all_ok = True
+    for filename, dest, label in files_needed:
+        if not os.path.exists(dest):
+            url = f"{GITHUB_RELEASE_BASE}/{filename}"
+            try:
+                st.info(f"⬇️ Pertama kali dijalankan — mengunduh {label} dari GitHub Release...")
+                _download_file(url, dest, label)
+                st.success(f"✅ {label} berhasil diunduh!")
+            except Exception as e:
+                st.error(f"❌ Gagal mengunduh {label}: {e}")
+                all_ok = False
+    return all_ok
 
 _model_ready = ensure_model_files()
+
 
 # Helper functions defined locally to resolve Pickle serialization lookup under __main__
 def clean_model_name(model_str):
