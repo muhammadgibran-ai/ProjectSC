@@ -1,13 +1,24 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import tensorflow as tf
-from tensorflow import keras
 import pickle
 import os
 import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+# Pure-numpy ANN inference (tanpa TensorFlow / ONNX)
+def _relu(x):   return np.maximum(0, x)
+def _linear(x): return x
+_ACT = {"relu": _relu, "linear": _linear}
+
+def numpy_predict(layers, X):
+    """Forward pass manual menggunakan bobot yang diekstrak dari Keras."""
+    out = np.array(X, dtype=np.float32)
+    for layer in layers:
+        out = out @ layer["W"] + layer["b"]
+        out = _ACT.get(layer["activation"], _linear)(out)
+    return out
 
 # ============================================================
 # GitHub Release - Auto-download model files
@@ -35,12 +46,12 @@ def _download_file(url: str, dest_path: str, label: str):
 def ensure_model_files():
     """Download model files dari GitHub Release jika belum ada di lokal."""
     project_dir = os.path.dirname(os.path.abspath(__file__))
-    model_target = os.path.join(project_dir, "model_harga_mobil.h5")
-    prep_target  = os.path.join(project_dir, "preprocessors.pkl")
+    weights_target = os.path.join(project_dir, "model_weights.pkl")
+    prep_target    = os.path.join(project_dir, "preprocessors.pkl")
     
     files_needed = [
-        ("model_harga_mobil.h5", model_target, "Model AI (.h5)"),
-        ("preprocessors.pkl",  prep_target,  "Preprocessor (.pkl)"),
+        ("model_weights.pkl", weights_target, "Bobot Model ANN (.pkl)"),
+        ("preprocessors.pkl", prep_target,    "Preprocessor (.pkl)"),
     ]
     
     all_ok = True
@@ -230,9 +241,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Path definitions - relative to this file's folder to work on any laptop
+# Path definitions
 project_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(project_dir, "model_harga_mobil.h5")
+model_path = os.path.join(project_dir, "model_weights.pkl")
 preprocessors_path = os.path.join(project_dir, "preprocessors.pkl")
 data_path = os.path.join(project_dir, "mobil_bekas_carmudi.csv")
 
@@ -242,14 +253,15 @@ def load_resources():
     if not os.path.exists(model_path) or not os.path.exists(preprocessors_path):
         return None, None
     
-    # Load keras model with compile=False to avoid Keras 3 deserialization issues
-    model = keras.models.load_model(model_path, compile=False)
+    # Load bobot numpy (ringan, tanpa TensorFlow)
+    with open(model_path, "rb") as f:
+        layers = pickle.load(f)
     
     # Load pickle preprocessors
     with open(preprocessors_path, "rb") as f:
         preprocessors = pickle.load(f)
         
-    return model, preprocessors
+    return layers, preprocessors
 
 @st.cache_data
 def load_car_data():
@@ -440,8 +452,8 @@ elif page == "🔮 Prediksi Harga":
             X_cat_vals = df_cat[prep["dummy_columns"]].values.astype(np.float32)
             X_input = np.hstack([num_scaled, X_cat_vals])
             
-            # Predict
-            pred_log = model.predict(X_input).flatten()[0]
+            # Predict (Pure Numpy - tanpa TensorFlow/ONNX)
+            pred_log = numpy_predict(model, X_input.astype(np.float32)).flatten()[0]
             pred_juta = np.exp(pred_log)
             
             # Final price in Rupiah
@@ -597,8 +609,8 @@ elif page == "🧠 Performa JST":
             X_cat = df_encoded[prep["dummy_columns"]].values.astype(np.float32)
             X_full = np.hstack([X_num, X_cat])
             
-            # Predict
-            pred_logs = model.predict(X_full, verbose=0).flatten()
+            # Predict (Pure Numpy - tanpa TensorFlow/ONNX)
+            pred_logs = numpy_predict(model, X_full.astype(np.float32)).flatten()
             pred_prices = np.exp(pred_logs)
             actual_prices = df['price'].values / 1e6
             

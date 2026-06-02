@@ -19,8 +19,11 @@ env/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Model files (hosted on HuggingFace Hub separately)
-# model_harga_mobil.h5 is excluded - it will be downloaded at runtime
+# Model files
+# .h5 file terlalu besar untuk GitHub (>100MB), sudah dikonversi ke .onnx
+*.h5
+# .onnx sudah dikecilkan, bisa masuk ke repo jika <100MB
+# !model_harga_mobil.onnx  # uncomment jika .onnx <100MB
 
 # Large packaged files
 *.zip

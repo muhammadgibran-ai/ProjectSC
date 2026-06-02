@@ -1,5 +1,4 @@
-# Core ML/Data libraries
-tensorflow==2.15.0
+# Core Data libraries (tanpa TensorFlow - model dijalankan dengan pure numpy)
 scikit-learn==1.4.2
 pandas==2.2.2
 numpy==1.26.4
