@@ -201,6 +201,71 @@ def run_training():
         print(f"  [PERIKSA] MAPE selisih {mape_diff:.2f}% - evaluasi lebih lanjut")
     print("=" * 60)
 
+    # ── ANALISIS DISTRIBUSI ERROR PER-SAMPEL ─────────────────────────────────
+    # Untuk membuktikan apakah MAE/MAPE benar-benar mewakili semua prediksi
+    per_error_abs   = np.abs(y_test_orig - y_pred_test_orig)           # |aktual - prediksi| per sampel
+    per_error_pct   = np.abs((y_test_orig - y_pred_test_orig) / y_test_orig) * 100  # MAPE per sampel
+
+    print("\n" + "=" * 70)
+    print("   ANALISIS DISTRIBUSI ERROR PER-SAMPEL (DATA TEST, n=%d)" % len(y_test_orig))
+    print("=" * 70)
+
+    print("\n  [A] STATISTIK DESKRIPTIF ERROR ABSOLUT (Juta Rp)")
+    print(f"      Minimum   : {np.min(per_error_abs):>10.2f} Juta  (prediksi terbaik)")
+    print(f"      Kuartil 1 : {np.percentile(per_error_abs, 25):>10.2f} Juta  (25% data di bawah ini)")
+    print(f"      Median    : {np.median(per_error_abs):>10.2f} Juta  (50% data di bawah ini)")
+    print(f"      Rata-rata : {np.mean(per_error_abs):>10.2f} Juta  (<-- ini MAE)")
+    print(f"      Kuartil 3 : {np.percentile(per_error_abs, 75):>10.2f} Juta  (75% data di bawah ini)")
+    print(f"      Maksimum  : {np.max(per_error_abs):>10.2f} Juta  (prediksi terburuk)")
+    print(f"      Std Dev   : {np.std(per_error_abs):>10.2f} Juta  (penyebaran error)")
+
+    print("\n  [B] STATISTIK DESKRIPTIF ERROR PERSENTASE (MAPE per sampel)")
+    print(f"      Minimum   : {np.min(per_error_pct):>10.2f}%    (prediksi terbaik)")
+    print(f"      Kuartil 1 : {np.percentile(per_error_pct, 25):>10.2f}%    (25% data di bawah ini)")
+    print(f"      Median    : {np.median(per_error_pct):>10.2f}%    (50% data di bawah ini)")
+    print(f"      Rata-rata : {np.mean(per_error_pct):>10.2f}%    (<-- ini MAPE)")
+    print(f"      Kuartil 3 : {np.percentile(per_error_pct, 75):>10.2f}%    (75% data di bawah ini)")
+    print(f"      Maksimum  : {np.max(per_error_pct):>10.2f}%    (prediksi terburuk)")
+
+    print("\n  [C] DISTRIBUSI AKURASI PER RENTANG ERROR (%)")
+    bands = [(0, 3), (3, 5), (5, 10), (10, 15), (15, 20), (20, 100)]
+    for low, high in bands:
+        count = np.sum((per_error_pct >= low) & (per_error_pct < high))
+        pct   = count / len(per_error_pct) * 100
+        bar   = "#" * int(pct / 2)
+        if high < 100:
+            label = f"  {low:>2}% - {high:>2}%"
+        else:
+            label = f"  {low:>2}%+     "
+        print(f"      {label} : {count:>3} sampel ({pct:>5.1f}%) {bar}")
+
+    # Berapa persen prediksi yang error-nya <= MAPE rata-rata
+    within_mape = np.sum(per_error_pct <= test_mape) / len(per_error_pct) * 100
+    print(f"\n      >>> {within_mape:.1f}% sampel memiliki error <= MAPE ({test_mape:.2f}%)")
+
+    print("\n  [D] 5 PREDIKSI TERBAIK (Error Terkecil)")
+    sorted_idx = np.argsort(per_error_pct)
+    print(f"      {'No':>4} {'Aktual (Jt)':>12} {'Prediksi (Jt)':>14} {'Error (Jt)':>11} {'Error (%)':>10}")
+    print("      " + "-" * 55)
+    for rank, idx in enumerate(sorted_idx[:5], 1):
+        print(f"      {rank:>4} {y_test_orig[idx]:>12.2f} {y_pred_test_orig[idx]:>14.2f} {per_error_abs[idx]:>11.2f} {per_error_pct[idx]:>9.2f}%")
+
+    print("\n  [E] 5 PREDIKSI TERBURUK (Error Terbesar)")
+    print(f"      {'No':>4} {'Aktual (Jt)':>12} {'Prediksi (Jt)':>14} {'Error (Jt)':>11} {'Error (%)':>10}")
+    print("      " + "-" * 55)
+    for rank, idx in enumerate(sorted_idx[-5:][::-1], 1):
+        print(f"      {rank:>4} {y_test_orig[idx]:>12.2f} {y_pred_test_orig[idx]:>14.2f} {per_error_abs[idx]:>11.2f} {per_error_pct[idx]:>9.2f}%")
+
+    print("\n  [KESIMPULAN DISTRIBUSI]")
+    print(f"      MAE = {test_mae:.2f} Juta dan MAPE = {test_mape:.2f}% adalah RATA-RATA.")
+    print(f"      Median error = {np.median(per_error_pct):.2f}% (lebih representatif dari rata-rata).")
+    print(f"      Error terkecil = {np.min(per_error_pct):.2f}%, terbesar = {np.max(per_error_pct):.2f}%.")
+    within_10 = np.sum(per_error_pct <= 10) / len(per_error_pct) * 100
+    within_15 = np.sum(per_error_pct <= 15) / len(per_error_pct) * 100
+    print(f"      {within_10:.1f}% prediksi memiliki error <= 10%.")
+    print(f"      {within_15:.1f}% prediksi memiliki error <= 15%.")
+    print("=" * 70)
+
     # alias untuk generate_jupyter_notebook
     mape = test_mape
     r2   = test_r2
