@@ -214,8 +214,8 @@ def scrape_carmudi(num_pages=40):
         # Drop the temporary car_id column
         df = df.drop(columns=["car_id"])
         
-        # Output directory
-        output_dir = "C:\\Users\\USER\\.gemini\\antigravity\\scratch\\proyek_sistem_cerdas"
+        # Output directory (relatif ke lokasi script ini)
+        output_dir = os.path.dirname(os.path.abspath(__file__))
         os.makedirs(output_dir, exist_ok=True)
         output_file = os.path.join(output_dir, "mobil_bekas_carmudi.csv")
         

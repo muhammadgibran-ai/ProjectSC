@@ -307,11 +307,11 @@ if page == "🏠 Beranda":
                 <div class='stat-label'>Total Data Listing</div>
             </div>
             <div class='stat-card'>
-                <div class='stat-value'>86.68%</div>
+                <div class='stat-value'>88.33%</div>
                 <div class='stat-label'>Akurasi Model (R²)</div>
             </div>
             <div class='stat-card'>
-                <div class='stat-value'>9.61%</div>
+                <div class='stat-value'>9.54%</div>
                 <div class='stat-label'>Rata-rata Error (MAPE)</div>
             </div>
         </div>
@@ -330,7 +330,7 @@ if page == "🏠 Beranda":
                 <b>Keunggulan Sistem:</b>
                 <ul style='color:#cbd5e1; margin-left: 20px;'>
                     <li><b>Data Riil & Terkini:</b> Dataset dikumpulkan dari pasar otomotif Indonesia secara langsung (carmudi.co.id) mencakup data hingga tahun 2026.</li>
-                    <li><b>Akurasi Tinggi & Good Fit:</b> Dengan MAPE sebesar 9.61% (memenuhi batas maksimal 10%), model ini terbukti <b>Good Fit</b> dengan selisih MAPE train-test hanya 2.72%.</li>
+                    <li><b>Akurasi Tinggi &amp; Good Fit:</b> Dengan MAPE sebesar 9.54% (memenuhi batas maksimal 10%), model ini terbukti <b>Good Fit</b> dengan selisih MAPE train-test hanya 2.73%.</li>
                     <li><b>Metodologi Ilmiah:</b> Model dilatih dengan mengoptimasi Relative Percentage Error (MAPE) melalui integrasi One-Hot Encoding dan standardisasi scaling.</li>
                 </ul>
             </p>
@@ -464,7 +464,7 @@ elif page == "🔮 Prediksi Harga":
             <div class='result-card'>
                 <div style='font-size:16px; color:#cbd5e1; font-weight:600;'>HARGA ESTISIMA PASARAN YANG DISARANKAN</div>
                 <div class='result-price'>Rp {pred_rupiah:,.0f}</div>
-                <div class='result-range'>Rentang Harga Wajar (±9.61% MAPE): <b>Rp {pred_rupiah * 0.9039:,.0f} - Rp {pred_rupiah * 1.0961:,.0f}</b></div>
+                <div class='result-range'>Rentang Harga Wajar (±9.54% MAPE): <b>Rp {pred_rupiah * 0.9046:,.0f} - Rp {pred_rupiah * 1.0954:,.0f}</b></div>
                 <p style='color:#a7f3d0; font-size:12px; margin-top:8px;'>Nilai depresiasi dipengaruhi oleh odometer {mileage:,.0f} KM dan usia kendaraan {age} tahun di daerah {location}.</p>
             </div>
             """, unsafe_allow_html=True)
@@ -590,11 +590,11 @@ elif page == "🧠 Performa JST":
             <div class='premium-title'>Metrik Evaluasi Model (Good Fit)</div>
             <table style='width:100%; border-collapse: collapse; margin-top:10px; color:#cbd5e1;'>
                 <tr style='border-bottom: 2px solid rgba(255,255,255,0.1);'><td style='padding:8px; font-weight:600;'>Metrik</td><td style='font-weight:600;'>TRAIN</td><td style='font-weight:600;'>TEST</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAPE (%)</td><td style='color:#10b981; font-weight:700;'>6.89%</td><td style='color:#10b981; font-weight:700;'>9.61%</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>R² Score</td><td style='color:#10b981; font-weight:700;'>0.9357</td><td style='color:#10b981; font-weight:700;'>0.8668</td></tr>
-                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAE (Juta Rp)</td><td style='color:#10b981; font-weight:700;'>17.16</td><td style='color:#10b981; font-weight:700;'>23.64</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAPE (%)</td><td style='color:#10b981; font-weight:700;'>6.80%</td><td style='color:#10b981; font-weight:700;'>9.54%</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>R² Score</td><td style='color:#10b981; font-weight:700;'>0.9243</td><td style='color:#10b981; font-weight:700;'>0.8833</td></tr>
+                <tr style='border-bottom: 1px solid rgba(255,255,255,0.05);'><td style='padding:8px; font-weight:600;'>MAE (Juta Rp)</td><td style='color:#10b981; font-weight:700;'>18.14</td><td style='color:#10b981; font-weight:700;'>23.44</td></tr>
             </table>
-            <p style='font-size:12px; color:#94a3b8; margin-top:10px;'>Model berstatus <b>GOOD FIT</b>: selisih MAPE train-test hanya 2.72% (ideal &le; 5%), menunjukkan model mampu menggeneralisasi dengan baik tanpa overfitting.</p>
+            <p style='font-size:12px; color:#94a3b8; margin-top:10px;'>Model berstatus <b>GOOD FIT</b>: selisih MAPE train-test hanya 2.73% (ideal &le; 5%), menunjukkan model mampu menggeneralisasi dengan baik tanpa overfitting.</p>
         </div>
         """, unsafe_allow_html=True)
         

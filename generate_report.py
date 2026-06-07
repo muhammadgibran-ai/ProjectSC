@@ -336,11 +336,11 @@ def generate_docx():
     )
     
     bullet_results = [
-        "Durasi Pelatihan Model: Early stopping menghentikan pelatihan pada epoch ke-118 dari batas maksimal 300 epoch karena validation loss telah mencapai titik optimum global. ReduceLROnPlateau menurunkan learning rate secara bertahap dari 0.001 hingga 1e-5.",
+        "Durasi Pelatihan Model: Early stopping menghentikan pelatihan pada epoch ke-131 dari batas maksimal 300 epoch karena validation loss telah mencapai titik optimum global. ReduceLROnPlateau menurunkan learning rate secara bertahap dari 0.001 hingga 1e-5.",
         "Durasi Prediksi Real-time: Waktu yang dibutuhkan model untuk melakukan prediksi tunggal (inferensi) adalah kurang dari 5 milidetik (0.005 detik), sangat responsif untuk aplikasi web interaktif.",
-        "Akurasi Model Regresi (R2): Pada dataset testing (15% data independen, n=83), model mencapai R2 sebesar 0.8668 (train R2 = 0.9357). Selisih R2 train-test sebesar 0.0690 menunjukkan model tidak overfitting.",
-        "Mean Absolute Percentage Error (MAPE): MAPE pengujian tercatat sebesar 9.61% (train MAPE = 6.89%), memenuhi ketetapan proyek dengan batas toleransi maksimal 10.0%. Selisih MAPE train-test hanya 2.72% menunjukkan kondisi Good Fit.",
-        "Mean Absolute Error (MAE): MAE pengujian sebesar Rp 23.64 Juta Rupiah (train MAE = 17.16 Juta Rupiah), menunjukkan penyimpangan rata-rata nominal harga prediksi terhadap harga aktual mobil."
+        "Akurasi Model Regresi (R2): Pada dataset testing (15% data independen, n=83), model mencapai R2 sebesar 0.8833 (train R2 = 0.9243). Selisih R2 train-test sebesar 0.0410 menunjukkan model tidak overfitting.",
+        "Mean Absolute Percentage Error (MAPE): MAPE pengujian tercatat sebesar 9.54% (train MAPE = 6.80%), memenuhi ketetapan proyek dengan batas toleransi maksimal 10.0%. Selisih MAPE train-test hanya 2.73% menunjukkan kondisi Good Fit.",
+        "Mean Absolute Error (MAE): MAE pengujian sebesar Rp 23.44 Juta Rupiah (train MAE = 18.14 Juta Rupiah), menunjukkan penyimpangan rata-rata nominal harga prediksi terhadap harga aktual mobil."
     ]
     for br in bullet_results:
         p_br = doc.add_paragraph(style='List Bullet')
@@ -395,8 +395,8 @@ def generate_docx():
     p_eval.paragraph_format.space_after = Pt(12)
     p_eval.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p_eval.add_run(
-        "Kelebihan Model: Model ini mencapai kondisi Good Fit yang ideal, dengan selisih MAPE antara data pelatihan (6.89%) dan "
-        "data pengujian (9.61%) hanya sebesar 2.72%. Penggunaan L2 Regularization dan Dropout berhasil mencegah overfitting "
+        "Kelebihan Model: Model ini mencapai kondisi Good Fit yang ideal, dengan selisih MAPE antara data pelatihan (6.80%) and "
+        "data pengujian (9.54%) hanya sebesar 2.73%. Penggunaan L2 Regularization dan Dropout berhasil mencegah overfitting "
         "yang terjadi pada model tanpa regularisasi. Model memiliki waktu inferensi yang instan untuk aplikasi web interaktif. "
         "Kekurangan Model: Karena dataset dibatasi hanya pada popular brands untuk stabilitas, model tidak dapat memprediksi "
         "harga mobil mewah (seperti Mercedes, BMW, Porsche) atau mobil yang sangat murah di bawah Rp 60 Juta karena minimnya "
@@ -427,7 +427,7 @@ def generate_docx():
         "tiga hidden layer (128, 64, dan 32 neuron dengan ReLU, L2 Regularization, dan Dropout), serta output layer tunggal "
         "(Linear) berhasil memprediksi harga jual mobil bekas di Indonesia dengan kondisi Good Fit. "
         "Penggunaan log-transformation pada target harga terbukti krusial untuk menstabilkan training dan menekan nilai MAPE "
-        "hingga 9.61% pada data pengujian (di bawah batas toleransi 10%), dengan selisih MAPE train-test hanya 2.72%. "
+        "hingga 9.54% pada data pengujian (di bawah batas toleransi 10%), dengan selisih MAPE train-test hanya 2.73%. "
         "Aplikasi web Streamlit yang dideploy berjalan dengan lancar, memberikan estimasi real-time instan, menyajikan "
         "analisis deskriptif pasar secara interaktif, dan dilengkapi dengan kalkulator simulasi kredit pembiayaan."
     )

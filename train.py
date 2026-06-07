@@ -7,6 +7,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pickle
 import os
+import random
+
+# ── Reproducibility Seed ─────────────────────────────────────────────────────
+SEED = 10
+random.seed(SEED)
+np.random.seed(SEED)
+tf.random.set_seed(SEED)
+os.environ["PYTHONHASHSEED"] = str(SEED)
 
 def clean_model_name(model_str):
     words = str(model_str).strip().split()
@@ -335,6 +343,14 @@ def generate_jupyter_notebook(project_dir, test_mape, r2):
                     "from sklearn.preprocessing import StandardScaler\n",
                     "import pickle\n",
                     "import os\n",
+                    "import random\n",
+                    "\n",
+                    "# Reproducibility seed\n",
+                    "SEED = 10\n",
+                    "random.seed(SEED)\n",
+                    "np.random.seed(SEED)\n",
+                    "tf.random.set_seed(SEED)\n",
+                    "os.environ['PYTHONHASHSEED'] = str(SEED)\n",
                     "\n",
                     "sns.set_theme(style='whitegrid')\n",
                     "print('TensorFlow version:', tf.__version__)"
