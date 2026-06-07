@@ -23,12 +23,23 @@ def create_zip():
     
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for f in files_to_pack:
-            file_path = os.path.join(project_dir, f)
-            if os.path.exists(file_path):
-                print(f"  Adding: {f}")
-                zipf.write(file_path, arcname=f)
+            if f == "requirements.txt":
+                file_path = os.path.join(project_dir, "requirements_submission.txt")
+                if os.path.exists(file_path):
+                    print("  Adding: requirements_submission.txt as requirements.txt")
+                    zipf.write(file_path, arcname="requirements.txt")
+                else:
+                    std_path = os.path.join(project_dir, "requirements.txt")
+                    if os.path.exists(std_path):
+                        print("  Adding: requirements.txt")
+                        zipf.write(std_path, arcname="requirements.txt")
             else:
-                print(f"  [Warning] File not found: {f}")
+                file_path = os.path.join(project_dir, f)
+                if os.path.exists(file_path):
+                    print(f"  Adding: {f}")
+                    zipf.write(file_path, arcname=f)
+                else:
+                    print(f"  [Warning] File not found: {f}")
                 
     print(f"ZIP archive successfully created: {zip_path}")
 
