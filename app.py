@@ -266,10 +266,10 @@ def load_resources():
 @st.cache_data
 def load_car_data():
     if os.path.exists(data_path):
-        df = pd.read_csv(data_path)
+        df_raw = pd.read_csv(data_path)
         # Apply standard clean
         popular_brands = ["Toyota", "Honda", "Suzuki", "Mitsubishi", "Daihatsu", "Hyundai", "Wuling", "Nissan"]
-        df_filtered = df[df['brand'].isin(popular_brands)]
+        df_filtered = df_raw[df_raw['brand'].isin(popular_brands)]
         df_filtered = df_filtered[(df_filtered['price'] >= 60_000_000) & (df_filtered['price'] <= 800_000_000)].copy()
         
         # Add engineered columns
@@ -281,11 +281,11 @@ def load_car_data():
         if prep is not None:
             df_filtered['model_clean'] = df_filtered['model_clean'].apply(lambda x: x if x in prep["top_models"] else 'Lainnya')
             
-        return df_filtered
-    return None
+        return df_filtered, df_raw
+    return None, None
  
 model, prep = load_resources()
-df = load_car_data()
+df, df_raw = load_car_data()
 
 # Navigation Sidebar
 st.sidebar.markdown("<div style='text-align: center; padding: 10px;'><h2 style='color:#38bdf8; margin-bottom:0;'>Estimasi Mobil</h2><p style='color:#64748b; font-size:12px;'>Sistem Cerdas JST</p></div>", unsafe_allow_html=True)
@@ -299,11 +299,11 @@ if page == "🏠 Beranda":
     st.markdown("<p style='color:#94a3b8; font-size:16px;'>Platform berbasis Jaringan Saraf Tiruan (JST) untuk memprediksi harga jual mobil bekas berdasarkan data riil dari ribuan listing terbaru di pasar otomotif Indonesia.</p>", unsafe_allow_html=True)
     
     # Visual stats
-    if df is not None:
-        st.markdown("""
+    if df is not None and df_raw is not None:
+        st.markdown(f"""
         <div class='stat-container'>
             <div class='stat-card'>
-                <div class='stat-value'>706</div>
+                <div class='stat-value'>{len(df_raw)}</div>
                 <div class='stat-label'>Total Data Listing</div>
             </div>
             <div class='stat-card'>
@@ -503,59 +503,125 @@ elif page == "📊 Analisis Pasar":
     if df is None:
         st.warning("Dataset tidak tersedia.")
     else:
-        # Layout plots
-        col1, col2 = st.columns(2)
+        # Panel Filter Utama
+        st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='premium-title' style='font-size:18px;'>🔍 Filter Data Analisis Pasar</div>", unsafe_allow_html=True)
         
-        with col1:
-            st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='premium-title'>Distribusi Harga Kendaraan</div>", unsafe_allow_html=True)
-            fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
-            ax.set_facecolor('#0f172a')
-            sns.histplot(df['price'] / 1e6, bins=20, kde=True, color='#38bdf8', ax=ax)
-            ax.set_xlabel("Harga (Juta Rupiah)", color='#cbd5e1')
-            ax.set_ylabel("Jumlah Kendaraan", color='#cbd5e1')
-            ax.tick_params(colors='#cbd5e1')
-            ax.title.set_color('#cbd5e1')
-            plt.tight_layout()
-            st.pyplot(fig)
-            st.markdown("</div>", unsafe_allow_html=True)
+        f_col1, f_col2, f_col3, f_col4 = st.columns(4)
+        
+        with f_col1:
+            all_brands = sorted(df['brand'].unique().tolist())
+            selected_brands = st.multiselect(
+                "Merek Mobil",
+                options=all_brands,
+                default=all_brands
+            )
             
-            st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='premium-title'>Depresiasi Harga vs Jarak Tempuh</div>", unsafe_allow_html=True)
-            fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
-            ax.set_facecolor('#0f172a')
-            sns.scatterplot(data=df, x='mileage', y=df['price']/1e6, hue='brand', palette='Set2', alpha=0.7, ax=ax)
-            ax.set_xlabel("Jarak Tempuh (Odometer KM)", color='#cbd5e1')
-            ax.set_ylabel("Harga (Juta Rupiah)", color='#cbd5e1')
-            ax.tick_params(colors='#cbd5e1')
-            ax.legend(facecolor='#0f172a', labelcolor='#cbd5e1', bbox_to_anchor=(1.05, 1), loc='upper left')
-            plt.tight_layout()
-            st.pyplot(fig)
-            st.markdown("</div>", unsafe_allow_html=True)
+        with f_col2:
+            all_transmissions = sorted(df['transmission'].unique().tolist())
+            selected_transmissions = st.multiselect(
+                "Jenis Transmisi",
+                options=all_transmissions,
+                default=all_transmissions
+            )
             
-        with col2:
-            st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='premium-title'>Pangsa Pasar Berdasarkan Merek</div>", unsafe_allow_html=True)
-            fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
-            ax.set_facecolor('#0f172a')
-            brand_cnt = df['brand'].value_counts()
-            ax.pie(brand_cnt, labels=brand_cnt.index, autopct='%1.1f%%', colors=sns.color_palette('Blues_r', len(brand_cnt)), textprops={'color': '#cbd5e1'})
-            plt.tight_layout()
-            st.pyplot(fig)
-            st.markdown("</div>", unsafe_allow_html=True)
+        with f_col3:
+            min_price = int(df['price'].min() / 1e6)
+            max_price = int(df['price'].max() / 1e6)
+            price_range = st.slider(
+                "Rentang Harga (Juta Rp)",
+                min_value=min_price,
+                max_value=max_price,
+                value=(min_price, max_price)
+            )
             
-            st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
-            st.markdown("<div class='premium-title'>Harga Rata-Rata Berdasarkan Tahun Pembuatan</div>", unsafe_allow_html=True)
-            fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
-            ax.set_facecolor('#0f172a')
-            avg_price_year = df.groupby('year')['price'].mean() / 1e6
-            ax.plot(avg_price_year.index, avg_price_year.values, marker='o', color='#10b981', linewidth=2.5)
-            ax.set_xlabel("Tahun Pembuatan", color='#cbd5e1')
-            ax.set_ylabel("Harga Rata-Rata (Juta Rupiah)", color='#cbd5e1')
-            ax.tick_params(colors='#cbd5e1')
-            plt.tight_layout()
-            st.pyplot(fig)
-            st.markdown("</div>", unsafe_allow_html=True)
+        with f_col4:
+            min_mileage = int(df['mileage'].min())
+            max_mileage = int(df['mileage'].max())
+            mileage_range = st.slider(
+                "Rentang Jarak Tempuh (KM)",
+                min_value=min_mileage,
+                max_value=max_mileage,
+                value=(min_mileage, max_mileage),
+                step=5000
+            )
+        st.markdown("</div>", unsafe_allow_html=True)
+        
+        # Terapkan filter ke dataframe
+        df_filtered = df[
+            (df['brand'].isin(selected_brands)) &
+            (df['transmission'].isin(selected_transmissions)) &
+            (df['price'] >= price_range[0] * 1e6) &
+            (df['price'] <= price_range[1] * 1e6) &
+            (df['mileage'] >= mileage_range[0]) &
+            (df['mileage'] <= mileage_range[1])
+        ]
+        
+        # Validasi jika hasil filter kosong
+        if df_filtered.empty:
+            st.warning("⚠️ Tidak ada data yang cocok dengan kriteria filter Anda. Silakan sesuaikan kembali filter di atas.")
+        else:
+            # Tampilkan informasi ringkasan data yang terfilter
+            st.markdown(f"""
+            <div style='background: rgba(56, 189, 248, 0.05); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 12px 18px; margin-bottom: 20px; font-size: 14px; color: #e2e8f0;'>
+                📊 Menampilkan <b>{len(df_filtered)}</b> dari <b>{len(df)}</b> data bersih hasil filter (Total database: <b>{len(df_raw)}</b> data).
+                <br><span style='font-size: 12px; color: #94a3b8;'>*Catatan: Selisih <b>{len(df_raw) - len(df)}</b> data dari database dieliminasi (outlier harga ekstrem & merek mewah/non-populer) untuk keperluan pemodelan JST yang optimal.</span>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Layout plots
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
+                st.markdown("<div class='premium-title'>Distribusi Harga Kendaraan</div>", unsafe_allow_html=True)
+                fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
+                ax.set_facecolor('#0f172a')
+                sns.histplot(df_filtered['price'] / 1e6, bins=20, kde=True, color='#38bdf8', ax=ax)
+                ax.set_xlabel("Harga (Juta Rupiah)", color='#cbd5e1')
+                ax.set_ylabel("Jumlah Kendaraan", color='#cbd5e1')
+                ax.tick_params(colors='#cbd5e1')
+                ax.title.set_color('#cbd5e1')
+                plt.tight_layout()
+                st.pyplot(fig)
+                st.markdown("</div>", unsafe_allow_html=True)
+                
+                st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
+                st.markdown("<div class='premium-title'>Depresiasi Harga vs Jarak Tempuh</div>", unsafe_allow_html=True)
+                fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
+                ax.set_facecolor('#0f172a')
+                sns.scatterplot(data=df_filtered, x='mileage', y=df_filtered['price']/1e6, hue='brand', palette='Set2', alpha=0.7, ax=ax)
+                ax.set_xlabel("Jarak Tempuh (Odometer KM)", color='#cbd5e1')
+                ax.set_ylabel("Harga (Juta Rupiah)", color='#cbd5e1')
+                ax.tick_params(colors='#cbd5e1')
+                ax.legend(facecolor='#0f172a', labelcolor='#cbd5e1', bbox_to_anchor=(1.05, 1), loc='upper left')
+                plt.tight_layout()
+                st.pyplot(fig)
+                st.markdown("</div>", unsafe_allow_html=True)
+                
+            with col2:
+                st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
+                st.markdown("<div class='premium-title'>Pangsa Pasar Berdasarkan Merek</div>", unsafe_allow_html=True)
+                fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
+                ax.set_facecolor('#0f172a')
+                brand_cnt = df_filtered['brand'].value_counts()
+                ax.pie(brand_cnt, labels=brand_cnt.index, autopct='%1.1f%%', colors=sns.color_palette('Blues_r', len(brand_cnt)), textprops={'color': '#cbd5e1'})
+                plt.tight_layout()
+                st.pyplot(fig)
+                st.markdown("</div>", unsafe_allow_html=True)
+                
+                st.markdown("<div class='premium-card'>", unsafe_allow_html=True)
+                st.markdown("<div class='premium-title'>Harga Rata-Rata Berdasarkan Tahun Pembuatan</div>", unsafe_allow_html=True)
+                fig, ax = plt.subplots(figsize=(6, 4), facecolor='#1e293b')
+                ax.set_facecolor('#0f172a')
+                avg_price_year = df_filtered.groupby('year')['price'].mean() / 1e6
+                ax.plot(avg_price_year.index, avg_price_year.values, marker='o', color='#10b981', linewidth=2.5)
+                ax.set_xlabel("Tahun Pembuatan", color='#cbd5e1')
+                ax.set_ylabel("Harga Rata-Rata (Juta Rupiah)", color='#cbd5e1')
+                ax.tick_params(colors='#cbd5e1')
+                plt.tight_layout()
+                st.pyplot(fig)
+                st.markdown("</div>", unsafe_allow_html=True)
 
 elif page == "🧠 Performa JST":
     st.markdown("<h1 style='color:#f8fafc; font-weight:700;'>🧠 Arsitektur & Performa Jaringan Saraf Tiruan</h1>", unsafe_allow_html=True)
